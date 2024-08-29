@@ -1,0 +1,145 @@
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header background styling */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.0), rgba(4,9,30,0.1)), url('johny-goerend-XWWKKdG4Arg-unsplash%20kopi%202.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: white;
+    padding: 40px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    height: 60px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+/* Navbar links styling */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar li a {
+    font-family: "Skeena";
+    font-size: 20px;
+    color: rgb(4,84,88);
+    text-decoration: none;
+    padding: 0px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: rgb(255, 87, 34);
+}
+
+/* Dropdown button styling */
+.dropbtn {
+    background-color: transparent;
+    font-family: "Skeena";
+    color: rgb(4,84,88);
+    font-size: 20px;
+    border: none;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Dropdown links styling */
+.dropdown-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-link:hover {
+    background-color: rgb(192, 190, 190);
+    color: rgb(255, 87, 34);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header text styling */
+.Frontpagetext {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.DKflag {
+    max-height: 50px;
+    max-width: 30px;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+
+.ENflag {
+    height: 20.0px;
+    max-width: 30px;
+    position: absolute;
+    right: 100px;
+    top: 15px;
+}
