@@ -1,0 +1,36 @@
+﻿@model List<Project.Models.Surfboard>
+
+<h2>Fishs</h2>
+
+<div class="row">
+    @foreach (var surfboard in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <!-- Hver kort fylder en tredjedel af bredden -->
+            <div class="card h-100">
+                <!-- h-100 sikrer at kortene fylder hele højden -->
+                <div class="card-body">
+                    <h5 class="card-title">@surfboard.Name</h5> <!-- Surfboard navn som kort overskrift -->
+                    <p class="card-text"><strong>Length:</strong> @surfboard.Length</p>
+                    <p class="card-text"><strong>Width:</strong> @surfboard.Width</p>
+                    <p class="card-text"><strong>Thickness:</strong> @surfboard.Thickness</p>
+                    <p class="card-text"><strong>Volume:</strong> @surfboard.Volume</p>
+                    <p class="card-text"><strong>Price:</strong> @surfboard.Price</p>
+
+                    @if (surfboard.Equipment != null && surfboard.Equipment.Any())
+                    {
+                        <p class="card-text">
+                            <strong>Equipment:</strong>
+                            <ul>
+                                @foreach (var equipment in surfboard.Equipment)
+                                {
+                                    <li>@equipment.Name</li>
+                                }
+                            </ul>
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
