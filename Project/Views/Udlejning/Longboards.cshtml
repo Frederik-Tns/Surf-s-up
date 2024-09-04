@@ -1,6 +1,25 @@
 ﻿@model List<Project.Models.Surfboard>
 
-<h2>Longboards</h2>
+<h2 class="title">Longboards</h2>
+
+<style>
+
+    .title {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .row {
+        margin-left: 10px;
+    }
+
+    .card-image {
+        max-width: 350px;
+        max-height: 350px;
+
+    }
+</style>
 
 <div class="row">
     @foreach (var surfboard in Model)
@@ -16,6 +35,7 @@
                     <p class="card-text"><strong>Thickness:</strong> @surfboard.Thickness</p>
                     <p class="card-text"><strong>Volume:</strong> @surfboard.Volume</p>
                     <p class="card-text"><strong>Price:</strong> @surfboard.Price</p>
+                    <img class="card-image" src="@surfboard.ImageURL">
 
                     @if (surfboard.Equipment != null && surfboard.Equipment.Any())
                     {

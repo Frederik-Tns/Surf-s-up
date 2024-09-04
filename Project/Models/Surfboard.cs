@@ -1,4 +1,6 @@
-﻿namespace Project.Models
+﻿using Microsoft.AspNetCore.Mvc.Routing;
+
+namespace Project.Models
 {
     public class Surfboard
     {
@@ -9,6 +11,7 @@
         public double Volume { get; set; }
         public string Type { get; set; } = string.Empty;
         public double Price { get; set; }
+        public string ImageURL { get; set; }
         public List<Equipment> Equipment { get; set;} = new List<Equipment>();
 
       

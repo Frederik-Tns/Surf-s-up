@@ -1,4 +1,6 @@
-﻿namespace Project.Models
+﻿using static System.Net.WebRequestMethods;
+
+namespace Project.Models
 {
     public class SurfboardRepo
     {
@@ -22,6 +24,7 @@
                 Volume = 38.8,
                 Type = "Shortboard",
                 Price = 565,
+                ImageURL = "https://dfsdr5wqg5xgr.cloudfront.net/catalog/product/cache/27526a56b2e11603fd131d06b424c878/t/a/tahe-surf_2021_dura-tec_6-7_hr_107123_kopi.jpg",
                 Equipment = new List<Equipment>()
             });
 
@@ -34,6 +37,7 @@
                 Volume = 44.16,
                 Type = "Funboard",
                 Price = 685,
+                ImageURL = "https://cdn.shopify.com/s/files/1/2146/1003/collections/funboard-feature-image-a-296x296.jpg?v=1569105463",
                 Equipment = new List<Equipment>()
             });
 
@@ -46,6 +50,7 @@
                 Volume = 43.22,
                 Type = "Funboard",
                 Price = 695,
+                ImageURL = "https://cdn.shopify.com/s/files/1/2146/1003/collections/funboard-feature-image-a-296x296.jpg?v=1569105463",
                 Equipment = new List<Equipment>()
             });
 
@@ -58,6 +63,7 @@
                 Volume = 29.39,
                 Type = "Fish",
                 Price = 645,
+                ImageURL = "https://lushpalm.com/wp-content/uploads/2020/04/fish-surfboard-olero.jpg",
                 Equipment = new List<Equipment>()
             });
 
@@ -70,6 +76,7 @@
                 Volume = 65.4,
                 Type = "Longboard",
                 Price = 895,
+                ImageURL = "https://www.light-surfboards.com/uploads/5/7/3/0/57306051/1473860971.png",
                 Equipment = new List<Equipment>()
             });
 
@@ -82,6 +89,7 @@
                 Volume = 33.7,
                 Type = "Shortboard",
                 Price = 645,
+                ImageURL = "https://files.oaiusercontent.com/file-tY50B2gGDYwjAGQED3EGDJ32?se=2024-09-04T18%3A57%3A02Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D39c6ce07-d170-4c04-897d-931b3c8d347e.webp&sig=qX1gpoXZW7/kSCv7REDjX8ka9xh4J6NEFAd31UCpJlg%3D",
                 Equipment = new List<Equipment>()
             });
 
@@ -94,6 +102,7 @@
                 Volume = 80,
                 Type = "Longboard",
                 Price = 1025,
+                ImageURL = "https://zeus-surf.com/cdn/shop/articles/choisir-planche-surf-longboard.jpg?v=1710775825&width=1500",
                 Equipment = new List<Equipment>()
             });
 
@@ -106,6 +115,7 @@
                 Volume = 301,
                 Type = "SUP",
                 Price = 854,
+                ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
                 Equipment = new List<Equipment>
                 {
                     new Equipment { Name = "Paddle" }
@@ -121,6 +131,7 @@
                 Volume = 270,
                 Type = "SUP",
                 Price = 611,
+                ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
                 Equipment = new List<Equipment>
                 {
                     new Equipment { Name = "Fin" },
@@ -139,6 +150,7 @@
                 Volume = 330,
                 Type = "SUP",
                 Price = 1304,
+                ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
                 Equipment = new List<Equipment>
                 {
                     new Equipment { Name = "Fin" },
