@@ -11,16 +11,44 @@
         /* Custom Styles */
         
 
-        
+        .DKflag {
+            max-height: 50px;
+            max-width: 50px;
+            position: absolute;
+            top: 5px;
+            left: 105px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
 
-        .DKflag, .ENflag {
-            max-height: 25px;
-            margin-left: 12px;
-            max-width: 40px;
+        .ENflag {
+            max-height: 50px;
+            max-width: 50px;
+            position: absolute;
+            top: 5px;
+            left: 145px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
         }
 
         .logo {
             height: 60px;
+            position: absolute;
+            top: 0;
+            left: 25px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .navbar-nav {
+            margin-right: 30%; /* Adjust this value as needed */
+        }
+
+        main {
+            padding-top: 50px; /* Juster denne værdi baseret på højden af din navbar */
         }
     </style>
 </head>
@@ -30,10 +58,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="https://i.ibb.co/cTtkrSN/image.png" alt="Surf's Up Logo" class="logo"></a>
+            <a class="navbar-brand" href="/Home/Index"><img src="https://i.imgur.com/41CUXkw.png" alt="Surf's Up Logo" class="logo"></a>
             <div class="d-flex">
-                <img class="ENflag" src="https://plus.unsplash.com/premium_photo-1675865395876-1cf435b64e78?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW5nbGlzaCUyMGZsYWd8ZW58MHx8MHx8fDA%3D">
-                <img class="DKflag" src="https://www.norden.org/sites/default/files/styles/content_size_800/public/images/Dansk%2520flag383594.jpeg?itok=OCE19OXk">
+                <img class="ENflag" src="https://www.theflagshop.co.uk/media/catalog/product/cache/1aa45e34d8351bef7860daeb50e7952c/u/n/union-jack-flag-8x5.gif">
+                <img class="DKflag" src="https://static.magflags.net/media/catalog/product/cache/75170699113cf9b1963820a3ea1bab40/D/K/DK-1x1.66_1.png">
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -46,12 +74,11 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Udlejning</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Bølgesurfing</a></li>
-                            <li><a class="dropdown-item" href="#">Windsurfing</a></li>
-                            <li><a class="dropdown-item" href="#">Kitesurfing</a></li>
-                            <li><a class="dropdown-item" href="#">Wingsurfing</a></li>
-                            <li><a class="dropdown-item" href="#">Beklædning</a></li>
-                            <li><a class="dropdown-item" href="#">Diverse</a></li>
+                            <li><a class="dropdown-item" href="/Udlejning/shortboards">Shortboards</a></li>
+                            <li><a class="dropdown-item" href="/Udlejning/funboards">Funboards</a></li>
+                            <li><a class="dropdown-item" href="/Udlejning/fishs">Fish</a></li>
+                            <li><a class="dropdown-item" href="/Udlejning/SUPs">SUPs</a></li>
+                            <li><a class="dropdown-item" href="/Udlejning/longboards">Longboards</a></li>
                         </ul>
                     </li>
 
@@ -75,6 +102,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <footer>
+
+    </footer>
     
 </body>
 
