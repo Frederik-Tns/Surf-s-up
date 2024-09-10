@@ -1,0 +1,79 @@
+﻿<div class="row">
+    @foreach (var surfboard in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@surfboard.Name</h5> 
+                    <p class="card-text"><strong>Price:</strong> @surfboard.Price</p>
+                    <!-- Image that triggers the modal -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#surfboardModal-@surfboard.Id">
+                        <img class="card-image" src="@surfboard.ImageURL" alt="Surfboard Image" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for each surfboard -->
+        <div class="modal fade" id="surfboardModal-@surfboard.Id" tabindex="-1" aria-labelledby="surfboardModalLabel-@surfboard.Id" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="surfboardModalLabel-@surfboard.Id">@surfboard.Name</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Length:</strong> @surfboard.Length</p>
+                        <p><strong>Width:</strong> @surfboard.Width</p>
+                        <p><strong>Thickness:</strong> @surfboard.Thickness</p>
+                        <p><strong>Volume:</strong> @surfboard.Volume</p>
+                        <!-- If surfboard has equipment, show it -->
+                        @if (surfboard.Equipment != null)
+                        {
+                            <p><strong>Equipment:</strong></p>
+                            <ul>
+                                @foreach (var equipment in surfboard.Equipment)
+                                {
+                                    <li>@equipment.Name</li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        <!-- Standard form submission, but intercepted with JavaScript -->
+                        <form id="addToBasketForm-@surfboard.Id" method="post" action="/Basket/AddToBasket" onsubmit="return handleFormSubmit(this);">
+                            <input type="hidden" name="surfboardId" value="@surfboard.Id" />
+                            <button type="submit" class="btn btn-primary">Tilføj til kurv</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<!-- Script to intercept form submission -->
+<script>
+    function handleFormSubmit(form) {
+        
+        const formData = new FormData(form);
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (response.ok) {
+                    
+                } else {
+                    alert('Der opstod en fejl.');
+                }
+            })
+            .catch(error => {
+                console.error('Fejl:', error);
+                alert('Der opstod en fejl.');
+            });
+
+        return false; // Prevent form from submitting the default way (i.e., no page reload)
+    }
+</script>

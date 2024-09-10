@@ -8,11 +8,11 @@ namespace Project.Models
 
         public SurfboardRepo()
         {
-            Add(); // Tilføjer alle hardcodede surfboards
+            StartBoards(); // Tilføjer alle hardcodede surfboards
         }
 
 
-        public void Add()
+        public void StartBoards()
         {
 
             surfboards.Add(new Surfboard
@@ -174,6 +174,12 @@ namespace Project.Models
         {
             List<Surfboard> filteredSurfboards = surfboards.FindAll(s => s.Type == type);
             return filteredSurfboards;
+        }
+
+        public Surfboard GetSurfBoardById(int id)
+        {
+            
+            return surfboards.Find(s => s.Id == id);
         }
     }
 

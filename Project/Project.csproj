@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <None Remove="Views\NewFile.txt" />
-    <None Remove="Views\Shared\NewFile.txt" />
   </ItemGroup>
 
   <ItemGroup>
