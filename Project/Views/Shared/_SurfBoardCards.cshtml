@@ -2,16 +2,16 @@
     @foreach (var surfboard in Model)
     {
         <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">@surfboard.Name</h5> 
-                    <p class="card-text"><strong>Price:</strong> @surfboard.Price</p>
-                    <!-- Image that triggers the modal -->
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#surfboardModal-@surfboard.Id">
-                        <img class="card-image" src="@surfboard.ImageURL" alt="Surfboard Image" />
-                    </a>
+            <!-- Make the entire card clickable -->
+            <a href="#" data-bs-toggle="modal" data-bs-target="#surfboardModal-@surfboard.Id" class="text-decoration-none">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img class="card-image" d-block mx-auto src="@surfboard.ImageURL" alt="Surfboard Image" />
+                        <h5 class="card-title text-center">@surfboard.Name</h5>
+                        <p class="card-text text-center mt-3"><strong>Price:</strong> @surfboard.Price DKK</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
 
         <!-- Modal for each surfboard -->
@@ -27,7 +27,6 @@
                         <p><strong>Width:</strong> @surfboard.Width</p>
                         <p><strong>Thickness:</strong> @surfboard.Thickness</p>
                         <p><strong>Volume:</strong> @surfboard.Volume</p>
-                        <!-- If surfboard has equipment, show it -->
                         @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
                         {
                             <p><strong>Equipment:</strong></p>
@@ -38,7 +37,6 @@
                                 }
                             </ul>
                         }
-                        <p><strong>Price:</strong> @surfboard.Price</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

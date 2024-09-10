@@ -12,3 +12,10 @@
     max-width: 350px;
     max-height: 350px;
 }
+.col-md-4.mb-4:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+}
+.col-md-4.mb-4{
+    margin-top: 50px;
+}
