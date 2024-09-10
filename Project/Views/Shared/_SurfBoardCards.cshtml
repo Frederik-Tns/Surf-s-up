@@ -42,8 +42,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                        <!-- Standard form submission, but intercepted with JavaScript -->
-                        <form id="addToBasketForm-@surfboard.Id" method="post" action="/Basket/AddToBasket" onsubmit="return handleFormSubmit(this);">
+                        <form id="addToBasketForm-@surfboard.Id" method="post" action="/Basket/AddToBasket">
                             <input type="hidden" name="surfboardId" value="@surfboard.Id" />
                             <button type="submit" class="btn btn-primary">Tilføj til kurv</button>
                         </form>
@@ -53,27 +52,5 @@
         </div>
     }
 </div>
-<!-- Script to intercept form submission -->
-<script>
-    function handleFormSubmit(form) {
-        
-        const formData = new FormData(form);
-        fetch(form.action, {
-            method: 'POST',
-            body: formData
-        })
-            .then(response => {
-                if (response.ok) {
-                    
-                } else {
-                    alert('Der opstod en fejl.');
-                }
-            })
-            .catch(error => {
-                console.error('Fejl:', error);
-                alert('Der opstod en fejl.');
-            });
 
-        return false; // Prevent form from submitting the default way (i.e., no page reload)
-    }
-</script>
+

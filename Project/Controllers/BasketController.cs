@@ -12,9 +12,6 @@ namespace Project.Controllers
             return View(Basket.RentedBoards);
         }
 
-
-
-
         [HttpPost]
         public IActionResult AddToBasket(int surfboardId)
         {
@@ -25,19 +22,21 @@ namespace Project.Controllers
                 Basket.RentedBoards.Add(surfboard);
                 GetTotalPrice();
             }
+            Surfboard s = repo.GetSurfBoardById(surfboardId);
+            return Redirect("/udlejning/" + s.Type);
 
-            return Ok(); // Returner succes status
         }
-
-
 
         private void GetTotalPrice()
         {
-            Basket.TotalPrice = 0;  
+            Basket.TotalPrice = 0;
             foreach (var item in Basket.RentedBoards)
             {
                 Basket.TotalPrice += item.Price;
             }
         }
+
+
+
     }
 }

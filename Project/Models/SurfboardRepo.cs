@@ -23,7 +23,7 @@ namespace Project.Models
                 Width = 21,
                 Thickness = 2.75,
                 Volume = 38.8,
-                Type = "Shortboard",
+                Type = "Shortboards",
                 Price = 565,
                 ImageURL = "https://dfsdr5wqg5xgr.cloudfront.net/catalog/product/cache/27526a56b2e11603fd131d06b424c878/t/a/tahe-surf_2021_dura-tec_6-7_hr_107123_kopi.jpg",
                 Equipment = new List<Equipment>()
@@ -37,7 +37,7 @@ namespace Project.Models
                 Width = 21.75,
                 Thickness = 2.75,
                 Volume = 44.16,
-                Type = "Funboard",
+                Type = "Funboards",
                 Price = 685,
                 ImageURL = "https://cdn.shopify.com/s/files/1/2146/1003/collections/funboard-feature-image-a-296x296.jpg?v=1569105463",
                 Equipment = new List<Equipment>()
@@ -51,7 +51,7 @@ namespace Project.Models
                 Width = 21.85,
                 Thickness = 2.9,
                 Volume = 43.22,
-                Type = "Funboard",
+                Type = "Funboards",
                 Price = 695,
                 ImageURL = "https://cdn.shopify.com/s/files/1/2146/1003/collections/funboard-feature-image-a-296x296.jpg?v=1569105463",
                 Equipment = new List<Equipment>()
@@ -65,7 +65,7 @@ namespace Project.Models
                 Width = 20.75,
                 Thickness = 2.3,
                 Volume = 29.39,
-                Type = "Fish",
+                Type = "Fishs",
                 Price = 645,
                 ImageURL = "https://lushpalm.com/wp-content/uploads/2020/04/fish-surfboard-olero.jpg",
                 Equipment = new List<Equipment>()
@@ -79,7 +79,7 @@ namespace Project.Models
                 Width = 22.8,
                 Thickness = 2.8,
                 Volume = 65.4,
-                Type = "Longboard",
+                Type = "Longboards",
                 Price = 895,
                 ImageURL = "https://www.light-surfboards.com/uploads/5/7/3/0/57306051/1473860971.png",
                 Equipment = new List<Equipment>()
@@ -93,7 +93,7 @@ namespace Project.Models
                 Width = 21,
                 Thickness = 2.5,
                 Volume = 33.7,
-                Type = "Shortboard",
+                Type = "Shortboards",
                 Price = 645,
                 ImageURL = "https://files.oaiusercontent.com/file-tY50B2gGDYwjAGQED3EGDJ32?se=2024-09-04T18%3A57%3A02Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D39c6ce07-d170-4c04-897d-931b3c8d347e.webp&sig=qX1gpoXZW7/kSCv7REDjX8ka9xh4J6NEFAd31UCpJlg%3D",
                 Equipment = new List<Equipment>()
@@ -107,7 +107,7 @@ namespace Project.Models
                 Width = 19.4,
                 Thickness = 3,
                 Volume = 80,
-                Type = "Longboard",
+                Type = "Longboards",
                 Price = 1025,
                 ImageURL = "https://zeus-surf.com/cdn/shop/articles/choisir-planche-surf-longboard.jpg?v=1710775825&width=1500",
                 Equipment = new List<Equipment>()
@@ -121,7 +121,7 @@ namespace Project.Models
                 Width = 30,
                 Thickness = 6,
                 Volume = 301,
-                Type = "SUP",
+                Type = "SUPs",
                 Price = 854,
                 ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
                 Equipment = new List<Equipment>
@@ -138,7 +138,7 @@ namespace Project.Models
                 Width = 32,
                 Thickness = 6,
                 Volume = 270,
-                Type = "SUP",
+                Type = "SUPs",
                 Price = 611,
                 ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
                 Equipment = new List<Equipment>
@@ -158,7 +158,7 @@ namespace Project.Models
                 Width = 25,
                 Thickness = 6,
                 Volume = 330,
-                Type = "SUP",
+                Type = "SUPs",
                 Price = 1304,
                 ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
                 Equipment = new List<Equipment>
@@ -181,6 +181,8 @@ namespace Project.Models
             
             return surfboards.Find(s => s.Id == id);
         }
+
+        
     }
 
 }
