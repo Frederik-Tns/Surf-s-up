@@ -28,7 +28,7 @@
                         <p><strong>Thickness:</strong> @surfboard.Thickness</p>
                         <p><strong>Volume:</strong> @surfboard.Volume</p>
                         <!-- If surfboard has equipment, show it -->
-                        @if (surfboard.Equipment != null)
+                        @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
                         {
                             <p><strong>Equipment:</strong></p>
                             <ul>
@@ -38,13 +38,16 @@
                                 }
                             </ul>
                         }
+                        <p><strong>Price:</strong> @surfboard.Price</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
                         <form id="addToBasketForm-@surfboard.Id" method="post" action="/Basket/AddToBasket">
                             <input type="hidden" name="surfboardId" value="@surfboard.Id" />
-                            <button type="submit" class="btn btn-primary">Tilføj til kurv</button>
+                            <button type="submit" class="btn btn-primary">
+                                Tilføj til kurv
+                            </button>
                         </form>
                     </div>
                 </div>

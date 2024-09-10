@@ -21,10 +21,9 @@ namespace Project.Controllers
             {
                 Basket.RentedBoards.Add(surfboard);
                 GetTotalPrice();
+                return Redirect("/udlejning/" + surfboard.Type);
             }
-            Surfboard s = repo.GetSurfBoardById(surfboardId);
-            return Redirect("/udlejning/" + s.Type);
-
+            return RedirectToAction("Index");
         }
 
         private void GetTotalPrice()
@@ -36,6 +35,18 @@ namespace Project.Controllers
             }
         }
 
+        public IActionResult RemoveFromBasket(int surfboardId)
+        {
+            var surfboard = Basket.RentedBoards.FirstOrDefault(b => b.Id == surfboardId);
+
+            if (surfboard != null)
+            {
+                Basket.RentedBoards.Remove(surfboard);
+                GetTotalPrice();
+            }
+
+            return Redirect("/Basket/Index");
+        }
 
 
     }

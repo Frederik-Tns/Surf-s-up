@@ -20,7 +20,8 @@
                                     <p class="mb-0">Pris: @surfboard.Price DKK</p>
                                 </div>
                             </div>
-                            <form method="post" action="/Basket/RemoveFromBasket/@surfboard.Id">
+                            <form id="addToBasketForm-@surfboard.Id" method="post" action="/Basket/RemoveFromBasket">
+                                <input type="hidden" name="surfboardId" value="@surfboard.Id" />
                                 <button class="btn btn-danger">Fjern</button>
                             </form>
                         </li>
