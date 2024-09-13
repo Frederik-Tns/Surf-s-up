@@ -1,5 +1,4 @@
-﻿.header {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.1)), url('https://as1.ftcdn.net/v2/jpg/01/98/97/16/1000_F_198971660_DtneXKrqmkewt2XP7HGaLE4XOFdgFpSI.jpg');
+﻿picture {
     background-position: center;
     background-size: cover;
     display: flex;
@@ -13,4 +12,20 @@
     text-align: center;
     color: white;
     position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+
+    
+}
+.Tilbud {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    zoom: 120%;
+    background-color: #0094ff;
+   
 }

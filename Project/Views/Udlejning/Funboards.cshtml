@@ -1,0 +1,11 @@
+﻿@model List<Project.Models.Surfboard>
+
+@section title {
+    <h1>Funboards</h1>
+}
+<!-- Her renderes _SurfBoardCards partial view -->
+<div class="row">
+    @Html.Partial("_SurfBoardCards", Model) 
+</div>
+
+<link href="/lib/bootstrap/css/surfBoardCards.css" rel="stylesheet">

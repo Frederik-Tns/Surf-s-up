@@ -18,8 +18,6 @@ namespace Project
                 pattern: "{controller=Home}/{action=index}/{id?}"
                 );
 
-
-
             app.Run();
         }
     }
