@@ -1,53 +1,48 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Project.Services;
 using Project.Models;
 
 namespace Project.Controllers
 {
     public class BasketController : Controller
     {
-        private SurfboardRepo repo = new SurfboardRepo();
-        // Visning af kurvens indhold
+        private readonly BasketService _basketService;
+
+        public BasketController(BasketService basketService)
+        {
+            _basketService = basketService;
+        }
+
+        // Show the contents of the basket
         public IActionResult Index()
         {
             return View(Basket.RentedBoards);
         }
 
+        // Handle the Add to Basket form submission
         [HttpPost]
-        public IActionResult AddToBasket(int surfboardId)
+        public IActionResult AddToBasket(int surfboardId, int quantity = 1)
         {
-            var surfboard = repo.GetSurfBoardById(surfboardId);
+            // Delegate the Add to Basket logic to the service
+            _basketService.AddToBasket(surfboardId, quantity);
 
+            // Optionally, retrieve the surfboard to properly redirect based on type
+            var surfboard = _basketService.GetSurfBoardById(surfboardId);
             if (surfboard != null)
             {
-                Basket.RentedBoards.Add(surfboard);
-                GetTotalPrice();
-                return Redirect("/udlejning/" + surfboard.Type);
+                return RedirectToAction("SurfboardsByType", "Udlejning", new { type = surfboard.Type });
             }
-            return RedirectToAction("Index");
+
+            return RedirectToAction("Index", "Home");
         }
 
-        private void GetTotalPrice()
-        {
-            Basket.TotalPrice = 0;
-            foreach (var item in Basket.RentedBoards)
-            {
-                Basket.TotalPrice += item.Price;
-            }
-        }
-
+        // Handle the Remove from Basket operation
+        [HttpPost]
         public IActionResult RemoveFromBasket(int surfboardId)
         {
-            var surfboard = Basket.RentedBoards.FirstOrDefault(b => b.SurfboardId == surfboardId);
-
-            if (surfboard != null)
-            {
-                Basket.RentedBoards.Remove(surfboard);
-                GetTotalPrice();
-            }
-
-            return Redirect("/Basket/Index");
+            _basketService.RemoveFromBasket(surfboardId);
+            return RedirectToAction("Index");
         }
-
-
     }
 }
+

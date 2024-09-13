@@ -5,12 +5,10 @@ public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-    public DbSet<Surfboard> Surfboards { get; set; }  // Example entity
-
+    public DbSet<Surfboard> Surfboards { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        // Additional configurations here
     }
 }
