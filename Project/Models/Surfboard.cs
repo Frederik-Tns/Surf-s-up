@@ -15,5 +15,6 @@ namespace Project.Models
         public string ImageURL { get; set; }
         public bool IsBooked { get; set; }
         public List<Equipment> Equipment { get; set;} = new List<Equipment>();
+      
     }
 }

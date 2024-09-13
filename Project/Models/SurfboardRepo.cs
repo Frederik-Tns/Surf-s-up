@@ -26,11 +26,13 @@ namespace Project.Models
                 Type = "Shortboards",
                 Price = 565,
                 ImageURL = "https://dfsdr5wqg5xgr.cloudfront.net/catalog/product/cache/27526a56b2e11603fd131d06b424c878/t/a/tahe-surf_2021_dura-tec_6-7_hr_107123_kopi.jpg",
+                IsBooked = false,
                 Equipment = new List<Equipment>()
             });
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 1,
                 Name = "The Wide Glider",
                 Length = 7.1,
@@ -45,6 +47,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 2,
                 Name = "The Golden Ratio",
                 Length = 6.3,
@@ -59,6 +62,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 3,
                 Name = "Mahi Mahi",
                 Length = 5.4,
@@ -73,6 +77,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 4,
                 Name = "The Emerald Glider",
                 Length = 9.2,
@@ -87,6 +92,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 5,
                 Name = "The Bomb",
                 Length = 5.5,
@@ -101,6 +107,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 6,
                 Name = "Walden Magic",
                 Length = 9.6,
@@ -115,6 +122,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 7,
                 Name = "Naish One",
                 Length = 12.6,
@@ -132,6 +140,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 8,
                 Name = "Six Tourer",
                 Length = 11.6,
@@ -152,6 +161,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
+                IsBooked = false,
                 Id = 9,
                 Name = "Naish Maliko",
                 Length = 14,
