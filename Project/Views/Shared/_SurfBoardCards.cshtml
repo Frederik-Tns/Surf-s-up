@@ -5,8 +5,8 @@
             <!-- Make the entire card clickable -->
             <a href="#" data-bs-toggle="modal" data-bs-target="#surfboardModal-@surfboard.Id" class="text-decoration-none">
                 <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img class="card-image" d-block mx-auto src="@surfboard.ImageURL" alt="Surfboard Image" />
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                        <img class="card-image d-block mx-auto" src="@surfboard.ImageURL" alt="Surfboard Image" />
                         <h5 class="card-title text-center">@surfboard.Name</h5>
                         <p class="card-text text-center mt-3"><strong>Price:</strong> @surfboard.Price DKK</p>
                     </div>
@@ -16,27 +16,38 @@
 
         <!-- Modal for each surfboard -->
         <div class="modal fade" id="surfboardModal-@surfboard.Id" tabindex="-1" aria-labelledby="surfboardModalLabel-@surfboard.Id" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Added modal-lg to make it wider -->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="surfboardModalLabel-@surfboard.Id">@surfboard.Name</h5>
+                        <h5 class="modal-title" id="surfboardModalLabel-@surfboard.Id"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Length:</strong> @surfboard.Length</p>
-                        <p><strong>Width:</strong> @surfboard.Width</p>
-                        <p><strong>Thickness:</strong> @surfboard.Thickness</p>
-                        <p><strong>Volume:</strong> @surfboard.Volume</p>
-                        @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
-                        {
-                            <p><strong>Equipment:</strong></p>
-                            <ul>
-                                @foreach (var equipment in surfboard.Equipment)
+                        <div class="row">
+                            <!-- Left column for the image -->
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <img class="img-fluid" src="@surfboard.ImageURL" alt="Surfboard Image" />
+                            </div>
+                            <!-- Right column for the surfboard information -->
+                            <div class="col-md-6">
+                                <p><strong></strong> @surfboard.Name</p>
+                                <p><strong>Length:</strong> @surfboard.Length</p>
+                                <p><strong>Width:</strong> @surfboard.Width</p>
+                                <p><strong>Thickness:</strong> @surfboard.Thickness</p>
+                                <p><strong>Volume:</strong> @surfboard.Volume</p>
+                                @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
                                 {
-                                    <li>@equipment.Name</li>
+                                    <p><strong>Equipment:</strong></p>
+                                    <ul>
+                                        @foreach (var equipment in surfboard.Equipment)
+                                        {
+                                            <li>@equipment.Name</li>
+                                        }
+                                    </ul>
                                 }
-                            </ul>
-                        }
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -53,5 +64,3 @@
         </div>
     }
 </div>
-
-
