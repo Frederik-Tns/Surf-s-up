@@ -5,7 +5,7 @@
 namespace Project.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,17 +14,17 @@ namespace Project.Migrations
                 name: "Surfboards",
                 columns: table => new
                 {
-                    SurfboardId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Length = table.Column<double>(type: "float", nullable: false),
-                    Width = table.Column<double>(type: "float", nullable: false),
-                    Thickness = table.Column<double>(type: "float", nullable: false),
-                    Volume = table.Column<double>(type: "float", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    ImageURL = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsBooked = table.Column<bool>(type: "bit", nullable: false)
+                    SurfboardId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Length = table.Column<double>(type: "REAL", nullable: false),
+                    Width = table.Column<double>(type: "REAL", nullable: false),
+                    Thickness = table.Column<double>(type: "REAL", nullable: false),
+                    Volume = table.Column<double>(type: "REAL", nullable: false),
+                    Type = table.Column<string>(type: "TEXT", nullable: false),
+                    Price = table.Column<double>(type: "REAL", nullable: false),
+                    ImageURL = table.Column<string>(type: "TEXT", nullable: false),
+                    IsBooked = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -35,10 +35,10 @@ namespace Project.Migrations
                 name: "Equipment",
                 columns: table => new
                 {
-                    EquipmentId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SurfboardId = table.Column<int>(type: "int", nullable: true)
+                    EquipmentId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    SurfboardId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {

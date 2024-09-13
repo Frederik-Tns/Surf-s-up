@@ -7,6 +7,7 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<Surfboard> Surfboards { get; set; }  // Example entity
 
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
