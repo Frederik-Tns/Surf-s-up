@@ -18,15 +18,15 @@ namespace Project.Services
 
             if (surfboard != null)
             {
-                if (Basket.RentedBoards == null)
+                if (Basket.BoardsInBasket == null)
                 {
-                    Basket.RentedBoards = new List<Surfboard>();
+                    Basket.BoardsInBasket = new List<Surfboard>();
                 }
 
                 // Add the surfboard to the basket 'quantity' times
                 for (int i = 0; i < quantity; i++)
                 {
-                    Basket.RentedBoards.Add(surfboard);
+                    Basket.BoardsInBasket.Add(surfboard);
                 }
 
                 CalculateTotalPrice(); // Update the total price of the basket
@@ -36,7 +36,7 @@ namespace Project.Services
         // Calculate the total price of all items in the basket
         private void CalculateTotalPrice()
         {
-            Basket.TotalPrice = Basket.RentedBoards?.Sum(s => s.Price) ?? 0;
+            Basket.TotalPrice = Basket.BoardsInBasket?.Sum(s => s.Price) ?? 0;
         }
 
         // Optionally, a method to get a surfboard by ID (or reuse the repository)

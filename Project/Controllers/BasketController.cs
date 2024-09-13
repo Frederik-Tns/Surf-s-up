@@ -16,7 +16,7 @@ namespace Project.Controllers
         // Show the contents of the basket
         public IActionResult Index()
         {
-            return View(Basket.RentedBoards);
+            return View(Basket.BoardsInBasket);
         }
 
         // Handle the Add to Basket form submission
