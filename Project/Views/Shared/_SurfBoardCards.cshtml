@@ -1,0 +1,57 @@
+﻿<div class="row">
+    @foreach (var surfboard in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <!-- Make the entire card clickable -->
+            <a href="#" data-bs-toggle="modal" data-bs-target="#surfboardModal-@surfboard.Id" class="text-decoration-none">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img class="card-image" d-block mx-auto src="@surfboard.ImageURL" alt="Surfboard Image" />
+                        <h5 class="card-title text-center">@surfboard.Name</h5>
+                        <p class="card-text text-center mt-3"><strong>Price:</strong> @surfboard.Price DKK</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Modal for each surfboard -->
+        <div class="modal fade" id="surfboardModal-@surfboard.Id" tabindex="-1" aria-labelledby="surfboardModalLabel-@surfboard.Id" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="surfboardModalLabel-@surfboard.Id">@surfboard.Name</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Length:</strong> @surfboard.Length</p>
+                        <p><strong>Width:</strong> @surfboard.Width</p>
+                        <p><strong>Thickness:</strong> @surfboard.Thickness</p>
+                        <p><strong>Volume:</strong> @surfboard.Volume</p>
+                        @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
+                        {
+                            <p><strong>Equipment:</strong></p>
+                            <ul>
+                                @foreach (var equipment in surfboard.Equipment)
+                                {
+                                    <li>@equipment.Name</li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        <form id="addToBasketForm-@surfboard.Id" method="post" action="/Basket/AddToBasket">
+                            <input type="hidden" name="surfboardId" value="@surfboard.Id" />
+                            <button type="submit" class="btn btn-primary">
+                                Tilføj til kurv
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
