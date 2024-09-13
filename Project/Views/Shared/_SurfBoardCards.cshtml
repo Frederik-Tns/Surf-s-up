@@ -36,6 +36,14 @@
                                 <p><strong>Width:</strong> @surfboard.Width</p>
                                 <p><strong>Thickness:</strong> @surfboard.Thickness</p>
                                 <p><strong>Volume:</strong> @surfboard.Volume</p>
+                                @if (surfboard.IsBooked == true)
+                                {
+                                    <p><strong>Out of stock:</strong>@surfboard.IsBooked </p>
+                                }
+                                else
+                                {
+                                    <p><strong>In stock:</strong>@surfboard.IsBooked </p>
+                                }
                                 @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
                                 {
                                     <p><strong>Equipment:</strong></p>
@@ -45,6 +53,7 @@
                                             <li>@equipment.Name</li>
                                         }
                                     </ul>
+                                    
                                 }
                             </div>
                         </div>

@@ -4,7 +4,7 @@ namespace Project.Models
 {
     public class Surfboard
     {
-        public int Id { get; set; }
+        public int SurfboardId { get; set; }
         public string Name { get; set; } = string.Empty;
         public double Length { get; set; }
         public double Width { get; set; }

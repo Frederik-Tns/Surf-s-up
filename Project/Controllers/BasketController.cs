@@ -37,7 +37,7 @@ namespace Project.Controllers
 
         public IActionResult RemoveFromBasket(int surfboardId)
         {
-            var surfboard = Basket.RentedBoards.FirstOrDefault(b => b.Id == surfboardId);
+            var surfboard = Basket.RentedBoards.FirstOrDefault(b => b.SurfboardId == surfboardId);
 
             if (surfboard != null)
             {

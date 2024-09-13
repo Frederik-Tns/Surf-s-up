@@ -17,7 +17,7 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
-                Id = 0,
+                SurfboardId = 0,
                 Name = "The Minilog",
                 Length = 6,
                 Width = 21,
@@ -33,7 +33,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 1,
+                SurfboardId = 1,
                 Name = "The Wide Glider",
                 Length = 7.1,
                 Width = 21.75,
@@ -47,8 +47,8 @@ namespace Project.Models
 
             surfboards.Add(new Surfboard
             {
-                IsBooked = false,
-                Id = 2,
+                IsBooked = true,
+                SurfboardId = 2,
                 Name = "The Golden Ratio",
                 Length = 6.3,
                 Width = 21.85,
@@ -63,7 +63,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 3,
+                SurfboardId = 3,
                 Name = "Mahi Mahi",
                 Length = 5.4,
                 Width = 20.75,
@@ -78,7 +78,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 4,
+                SurfboardId = 4,
                 Name = "The Emerald Glider",
                 Length = 9.2,
                 Width = 22.8,
@@ -93,7 +93,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 5,
+                SurfboardId = 5,
                 Name = "The Bomb",
                 Length = 5.5,
                 Width = 21,
@@ -108,7 +108,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 6,
+                SurfboardId = 6,
                 Name = "Walden Magic",
                 Length = 9.6,
                 Width = 19.4,
@@ -123,7 +123,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 7,
+                SurfboardId = 7,
                 Name = "Naish One",
                 Length = 12.6,
                 Width = 30,
@@ -141,7 +141,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 8,
+                SurfboardId = 8,
                 Name = "Six Tourer",
                 Length = 11.6,
                 Width = 32,
@@ -162,7 +162,7 @@ namespace Project.Models
             surfboards.Add(new Surfboard
             {
                 IsBooked = false,
-                Id = 9,
+                SurfboardId = 9,
                 Name = "Naish Maliko",
                 Length = 14,
                 Width = 25,
@@ -189,7 +189,7 @@ namespace Project.Models
         public Surfboard GetSurfBoardById(int id)
         {
             
-            return surfboards.Find(s => s.Id == id);
+            return surfboards.Find(s => s.SurfboardId == id);
         }
 
         
