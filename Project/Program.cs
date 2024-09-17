@@ -1,24 +1,28 @@
-using System.Net.Mime;
-using System.Text;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Project.Models;
+using Project.Services;
 
-namespace Project
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddControllersWithViews();
-            var app = builder.Build();
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
-            app.UseStaticFiles();
+// Configure Entity Framework Core and your DbContext with the connection string
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+//dependency injection
+builder.Services.AddScoped<BasketService>();
+builder.Services.AddScoped<SurfboardRepo>();
 
-            app.MapControllerRoute(name: "default",
-                pattern: "{controller=Home}/{action=index}/{id?}"
-                );
+var app = builder.Build();
 
-            app.Run();
-        }
-    }
-}
+// Middleware for serving static files
+app.UseStaticFiles();
+
+// Configure routing
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();

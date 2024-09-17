@@ -4,7 +4,7 @@ namespace Project.Models
 {
     public class Surfboard
     {
-        public int Id { get; set; }
+        public int SurfboardId { get; set; }
         public string Name { get; set; } = string.Empty;
         public double Length { get; set; }
         public double Width { get; set; }
@@ -13,8 +13,26 @@ namespace Project.Models
         public string Type { get; set; } = string.Empty;
         public double Price { get; set; }
         public string ImageURL { get; set; }
-        public List<Equipment> Equipment { get; set;} = new List<Equipment>();
+        public bool IsBooked { get; set; }
+        public DateTime? BookingStartDate { get; set; }
+        public DateTime? BookingEndDate { get; set; }
+        public List<Equipment>? Equipment { get; set;} = new List<Equipment>();
+        public List<Booking>? Booking = new List<Booking>() { };
 
-      
+
+
+        public string CheckIfBooked(bool isBooked)
+        {
+            if (isBooked)
+            {
+                return "Ikke på lager";
+            }
+
+            else
+            {
+                return "På lager";
+            }
+        }
+
     }
 }

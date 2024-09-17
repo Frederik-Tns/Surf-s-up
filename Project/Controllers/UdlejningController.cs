@@ -7,39 +7,26 @@ namespace Project.Controllers
     {
         private SurfboardRepo surfboardRepo;
 
-        public UdlejningController() 
+        public UdlejningController(ApplicationDbContext _context) 
         {
-            surfboardRepo = new SurfboardRepo();
+            surfboardRepo = new SurfboardRepo(_context);
         }
-        public IActionResult Shortboards()
+        public IActionResult SurfboardsByType(string type)
         {
-            List<Surfboard> shortboards = surfboardRepo.GetSurfBoardsByType("Shortboards");
-            return View(shortboards);
-        }
-        public IActionResult Funboards()
-        {
-            List<Surfboard> funboards = surfboardRepo.GetSurfBoardsByType("Funboards");
-            return View(funboards);
+            var validTypes = new List<string> { "Shortboards", "Funboards", "Fishs", "SUPs", "Longboards" };
+
+            if (string.IsNullOrWhiteSpace(type) || !validTypes.Contains(type))
+            {
+                return NotFound("Invalid surfboard type.");
+            }
+
+
+            List<Surfboard> surfboards = surfboardRepo.GetSurfBoardsByType(type);
+
+            ViewBag.SurfboardType = type;
+
+            return View(surfboards);
         }
 
-        public IActionResult Fishs()
-        {
-            List<Surfboard> fishs = surfboardRepo.GetSurfBoardsByType("Fishs");
-            return View(fishs);
-        }
-
-        public IActionResult Longboards()
-        {
-            List<Surfboard> longboards = surfboardRepo.GetSurfBoardsByType("Longboards");
-            return View(longboards);
-        }
-
-        public IActionResult SUPs()
-        {
-            List<Surfboard> sups = surfboardRepo.GetSurfBoardsByType("SUPs");
-            return View(sups);
-        }
-
-       
     }
 }
