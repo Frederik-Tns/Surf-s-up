@@ -61,13 +61,13 @@ namespace Project.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("BookingEndDate")
+                    b.Property<DateTime?>("BookingEndDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("BookingId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("BookingStartDate")
+                    b.Property<DateTime?>("BookingStartDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ImageURL")

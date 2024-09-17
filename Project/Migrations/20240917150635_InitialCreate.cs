@@ -59,8 +59,8 @@ namespace Project.Migrations
                     Price = table.Column<double>(type: "REAL", nullable: false),
                     ImageURL = table.Column<string>(type: "TEXT", nullable: false),
                     IsBooked = table.Column<bool>(type: "INTEGER", nullable: false),
-                    BookingStartDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    BookingEndDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    BookingStartDate = table.Column<DateTime>(type: "TEXT", nullable: true),
+                    BookingEndDate = table.Column<DateTime>(type: "TEXT", nullable: true),
                     BookingId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>

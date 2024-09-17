@@ -9,7 +9,8 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                         <img class="card-image d-block mx-auto" src="@surfboard.ImageURL" alt="Surfboard Image" />
                         <h5 class="card-title text-center">@surfboard.Name</h5>
-                        <p class="card-text text-center mt-3"><strong>Price:</strong> @surfboard.Price DKK</p>
+                        <p class="card-text text-center mt-3"><strong>Price pr. day:</strong> @surfboard.Price DKK</p>
+                        <p class="card-text text-center mt-3"><strong>In stock:</strong> @surfboard.IsBooked</p>
                     </div>
                 </div>
             </a>
@@ -47,7 +48,16 @@
                                         }
                                     </ul>
                                 }
-                                <p><strong>In order:</strong></p>
+
+                                <p><strong>Booking start Date:</strong></p>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" name="BookingStartDate" />
+                                </div>
+
+                                <p><strong>Booking end Date:</strong></p>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" name="BookingEndDate" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -57,7 +67,7 @@
                         <form id="addToBasketForm-@surfboard.SurfboardId" method="post" action="/Basket/AddToBasket">
                             <input type="hidden" name="surfboardId" value="@surfboard.SurfboardId"/>
                             <button type="submit" class="btn btn-primary">
-                                Tilføj til kurv
+                                Lej board
                             </button>
                         </form>
                     </div>

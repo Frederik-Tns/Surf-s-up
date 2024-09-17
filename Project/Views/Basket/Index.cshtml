@@ -13,11 +13,13 @@
                         {
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <img src="@surfboard?.ImageURL ?? " /assets/default-image.png"" alt="@surfboard?.Name ?? " No Name"" class="img-thumbnail" style="width: 100px; height: auto;">
+                                    <img src="@surfboard?.ImageURL ?? "/assets/default-image.png"" alt="@surfboard?.Name ?? " No Name"" class="img-thumbnail" style="width: 100px; height: auto;">
                                     <div class="ms-3">
                                         <h5>@surfboard?.Name</h5>
                                         <p class="mb-0">Type: @surfboard?.Type</p>
                                         <p class="mb-0">Price: @surfboard?.Price DKK</p>
+                                        <p class="mb-0">Price: @surfboard?.BookingStartDate</p>
+                                        <p class="mb-0">Price: @surfboard?.BookingEndDate</p>
                                     </div>
                                 </div>
                                 <form id="addToBasketForm-@surfboard.SurfboardId" method="post" action="/Basket/RemoveFromBasket">
