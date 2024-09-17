@@ -40,8 +40,21 @@ namespace Project.Services
         // Calculate the total price of all items in the basket
         private void CalculateTotalPrice(DateTime startDate, DateTime endDate)
         {
+            DateTime timeToday = DateTime.Today;
             
             int daysBetween = (endDate - startDate).Days > 0 ? (endDate - startDate).Days : (endDate - startDate).Days + 1;
+
+            if (daysBetween <= 0)
+            {
+                daysBetween = 1;
+            }
+
+            if (startDate.DayOfYear < timeToday.DayOfYear)
+            {
+                daysBetween = 0;
+            }
+
+
             Basket.TotalPrice = Basket.BoardsInBasket?.Sum(s => s.Price * daysBetween) ?? 0;
         }
 
