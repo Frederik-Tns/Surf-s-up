@@ -1,0 +1,36 @@
+﻿.custom-close {
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    background-color: transparent; 
+    border: none; 
+    font-size: 1.5rem;
+    color: #000; 
+    cursor: pointer;
+}
+
+    .custom-close:hover {
+        color: #000; 
+    }
+
+.logo {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-nav {
+    margin-right: 30%;
+}
+
+main {
+    padding-top: 50px; 
+}
+
+li {
+    list-style-type: none !important;
+}
