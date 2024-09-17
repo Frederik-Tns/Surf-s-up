@@ -7,9 +7,9 @@ namespace Project.Controllers
     {
         private SurfboardRepo surfboardRepo;
 
-        public UdlejningController() 
+        public UdlejningController(ApplicationDbContext _context) 
         {
-            surfboardRepo = new SurfboardRepo();
+            surfboardRepo = new SurfboardRepo(_context);
         }
         public IActionResult SurfboardsByType(string type)
         {

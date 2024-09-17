@@ -1,10 +1,12 @@
-﻿using static System.Net.WebRequestMethods;
+﻿using Microsoft.EntityFrameworkCore;
+using SQLitePCL;
+
 
 namespace Project.Models
 {
     public class SurfboardRepo
     {
-
+        ApplicationDbContext _context;
         private SurfboardRepo _instance;
 
         public SurfboardRepo Instance
@@ -17,213 +19,37 @@ namespace Project.Models
                 {
                     _instance = value;
                 }
-                
             }
         }
 
-
         private List<Surfboard> surfboards = new List<Surfboard>();
 
-        public SurfboardRepo()
+        public SurfboardRepo(ApplicationDbContext context)
         {
-            /*StartBoards();*/ // Tilføjer alle hardcodede surfboards
+            _context = context;
+            GetAllBoards();
         }
-
-
-        //public void StartBoards()
-        //{
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        SurfboardId = 0,
-        //        Name = "The Minilog",
-        //        Length = 6,
-        //        Width = 21,
-        //        Thickness = 2.75,
-        //        Volume = 38.8,
-        //        Type = "Shortboards",
-        //        Price = 565,
-        //        ImageURL = "https://dfsdr5wqg5xgr.cloudfront.net/catalog/product/cache/27526a56b2e11603fd131d06b424c878/t/a/tahe-surf_2021_dura-tec_6-7_hr_107123_kopi.jpg",
-        //        IsBooked = false,
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 1,
-        //        Name = "The Wide Glider",
-        //        Length = 7.1,
-        //        Width = 21.75,
-        //        Thickness = 2.75,
-        //        Volume = 44.16,
-        //        Type = "Funboards",
-        //        Price = 685,
-        //        ImageURL = "https://cdn.shopify.com/s/files/1/2146/1003/collections/funboard-feature-image-a-296x296.jpg?v=1569105463",
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 2,
-        //        Name = "The Golden Ratio",
-        //        Length = 6.3,
-        //        Width = 21.85,
-        //        Thickness = 2.9,
-        //        Volume = 43.22,
-        //        Type = "Funboards",
-        //        Price = 695,
-        //        ImageURL = "https://cdn.shopify.com/s/files/1/2146/1003/collections/funboard-feature-image-a-296x296.jpg?v=1569105463",
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 3,
-        //        Name = "Mahi Mahi",
-        //        Length = 5.4,
-        //        Width = 20.75,
-        //        Thickness = 2.3,
-        //        Volume = 29.39,
-        //        Type = "Fishs",
-        //        Price = 645,
-        //        ImageURL = "https://lushpalm.com/wp-content/uploads/2020/04/fish-surfboard-olero.jpg",
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 4,
-        //        Name = "The Emerald Glider",
-        //        Length = 9.2,
-        //        Width = 22.8,
-        //        Thickness = 2.8,
-        //        Volume = 65.4,
-        //        Type = "Longboards",
-        //        Price = 895,
-        //        ImageURL = "https://www.light-surfboards.com/uploads/5/7/3/0/57306051/1473860971.png",
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 5,
-        //        Name = "The Bomb",
-        //        Length = 5.5,
-        //        Width = 21,
-        //        Thickness = 2.5,
-        //        Volume = 33.7,
-        //        Type = "Shortboards",
-        //        Price = 645,
-        //        ImageURL = "https://files.oaiusercontent.com/file-tY50B2gGDYwjAGQED3EGDJ32?se=2024-09-04T18%3A57%3A02Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D39c6ce07-d170-4c04-897d-931b3c8d347e.webp&sig=qX1gpoXZW7/kSCv7REDjX8ka9xh4J6NEFAd31UCpJlg%3D",
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 6,
-        //        Name = "Walden Magic",
-        //        Length = 9.6,
-        //        Width = 19.4,
-        //        Thickness = 3,
-        //        Volume = 80,
-        //        Type = "Longboards",
-        //        Price = 1025,
-        //        ImageURL = "https://zeus-surf.com/cdn/shop/articles/choisir-planche-surf-longboard.jpg?v=1710775825&width=1500",
-        //        Equipment = new List<Equipment>()
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 7,
-        //        Name = "Naish One",
-        //        Length = 12.6,
-        //        Width = 30,
-        //        Thickness = 6,
-        //        Volume = 301,
-        //        Type = "SUPs",
-        //        Price = 854,
-        //        ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
-        //        Equipment = new List<Equipment>
-        //        {
-        //            new Equipment { Name = "Paddle" }
-        //        }
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 8,
-        //        Name = "Six Tourer",
-        //        Length = 11.6,
-        //        Width = 32,
-        //        Thickness = 6,
-        //        Volume = 270,
-        //        Type = "SUPs",
-        //        Price = 611,
-        //        ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
-        //        Equipment = new List<Equipment>
-        //        {
-        //            new Equipment { Name = "Fin" },
-        //            new Equipment { Name = "Paddle" },
-        //            new Equipment { Name = "Pump" },
-        //            new Equipment { Name = "Leash" }
-        //        }
-        //    });
-
-        //    surfboards.Add(new Surfboard
-        //    {
-        //        IsBooked = false,
-        //        SurfboardId = 9,
-        //        Name = "Naish Maliko",
-        //        Length = 14,
-        //        Width = 25,
-        //        Thickness = 6,
-        //        Volume = 330,
-        //        Type = "SUPs",
-        //        Price = 1304,
-        //        ImageURL = "https://sup.star-board.com/wp-content/uploads/2023/07/2024-Pro-All-Round-Wave-hard-stand-up-paddle-board-Starboard-SUP-key-feature-main-top-550x309.jpg",
-        //        Equipment = new List<Equipment>
-        //        {
-        //            new Equipment { Name = "Fin" },
-        //            new Equipment { Name = "Paddle" },
-        //            new Equipment { Name = "Pump" },
-        //            new Equipment { Name = "Leash" }
-        //        }
-        //    });
-        //}
+        public void GetAllBoards()
+        {
+            _context.Database.EnsureCreated();
+            surfboards = _context.Surfboards.ToList();
+        }
         public List<Surfboard> GetSurfBoardsByType(string type)
         {
-            List<Surfboard> filteredSurfboards = surfboards.FindAll(s => s.Type == type);
-            return filteredSurfboards;
+            return _context.Surfboards.Where(s => s.Type == type).ToList();
         }
 
         public Surfboard GetSurfBoardById(int id)
         {
-            
-            return surfboards.Find(s => s.SurfboardId == id);
+
+            return _context.Surfboards.Find(id);
         }
 
-        public bool AllBoardsBooked(string type)
+        public bool AllBoardsBooked(string name)
         {
-            List<Surfboard> filteredSurfboards = surfboards.FindAll(s => s.Type == type);
-
-            foreach(var surfboard in filteredSurfboards)
-            {
-                if (surfboard.IsBooked == false)
-                {
-                    return false;
-                }
-            }
-
-            return true;
+            return !_context.Surfboards.Any(s => s.Name == name && !s.IsBooked);
         }
+        
 
         
     }

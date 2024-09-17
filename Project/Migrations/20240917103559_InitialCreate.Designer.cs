@@ -4,14 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Project.Models;
 
 #nullable disable
 
 namespace Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240913151246_InitialCreate")]
+    [Migration("20240917103559_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -19,6 +18,25 @@ namespace Project.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
+
+            modelBuilder.Entity("Project.Models.Booking", b =>
+                {
+                    b.Property<int>("BookingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("SurfboardId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("BookingId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Bookings");
+                });
 
             modelBuilder.Entity("Project.Models.Equipment", b =>
                 {
@@ -45,6 +63,15 @@ namespace Project.Migrations
                     b.Property<int>("SurfboardId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("BookingEndDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("BookingId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("BookingStartDate")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ImageURL")
                         .IsRequired()
@@ -78,19 +105,68 @@ namespace Project.Migrations
 
                     b.HasKey("SurfboardId");
 
+                    b.HasIndex("BookingId");
+
                     b.ToTable("Surfboards");
+                });
+
+            modelBuilder.Entity("Project.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Project.Models.Booking", b =>
+                {
+                    b.HasOne("Project.Models.User", "User")
+                        .WithMany("Bookings")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Project.Models.Equipment", b =>
                 {
-                    b.HasOne("Project.Models.Surfboard", null)
+                    b.HasOne("Project.Models.Surfboard", "Surfboard")
                         .WithMany("Equipment")
                         .HasForeignKey("SurfboardId");
+
+                    b.Navigation("Surfboard");
+                });
+
+            modelBuilder.Entity("Project.Models.Surfboard", b =>
+                {
+                    b.HasOne("Project.Models.Booking", null)
+                        .WithMany("Surfboards")
+                        .HasForeignKey("BookingId");
+                });
+
+            modelBuilder.Entity("Project.Models.Booking", b =>
+                {
+                    b.Navigation("Surfboards");
                 });
 
             modelBuilder.Entity("Project.Models.Surfboard", b =>
                 {
                     b.Navigation("Equipment");
+                });
+
+            modelBuilder.Entity("Project.Models.User", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 #pragma warning restore 612, 618
         }

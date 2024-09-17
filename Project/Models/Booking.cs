@@ -1,10 +1,8 @@
 ﻿namespace Project.Models
 {
-    public class Order
+    public class Booking
     {
-        public int OrderId { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public int BookingId { get; set; }
         public User? User { get; set; }
         public int? UserId { get; set; }
         public List<Surfboard>? Surfboards { get; set; } = new List<Surfboard>();

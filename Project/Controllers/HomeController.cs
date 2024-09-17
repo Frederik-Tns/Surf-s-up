@@ -9,8 +9,8 @@ namespace Project.Controllers
         private ApplicationDbContext _applicationDbContext;
         public IActionResult Index()
         {
-            _applicationDbContext.Database.EnsureCreated();
-            _applicationDbContext.Surfboards.Take(10); //returnere et hvis antal boards(så der ikke bliver vist alle boards på en gang)
+        //    _applicationDbContext.Database.EnsureCreated();
+        //    _applicationDbContext.Surfboards.Take(10); //returnere et hvis antal boards(så der ikke bliver vist alle boards på en gang)
             return View(Index);
         }
         public HomeController(ApplicationDbContext applicationDbContext) 

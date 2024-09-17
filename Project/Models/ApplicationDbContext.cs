@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project.Models;
-namespace Project.Models;
 public class ApplicationDbContext : DbContext
 {
+    public DbSet<Booking> Bookings { get; set; }
+    public DbSet<Surfboard> Surfboards { get; set; }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-    public DbSet<Surfboard> Surfboards { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
