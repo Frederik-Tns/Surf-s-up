@@ -19,7 +19,6 @@
             }
         }
 
-
         private List<Booking> _booking;
 
 		public List<Booking> Booking

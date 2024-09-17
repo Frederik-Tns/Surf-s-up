@@ -1,4 +1,7 @@
-﻿@section title {
+﻿@using Project.Models
+
+
+@section title {
     
 }
 
@@ -17,9 +20,9 @@
                                     <div class="ms-3">
                                         <h5>@surfboard?.Name</h5>
                                         <p class="mb-0">Type: @surfboard?.Type</p>
-                                        <p class="mb-0">Price: @surfboard?.Price DKK</p>
-                                        <p class="mb-0">Price: @surfboard?.BookingStartDate</p>
-                                        <p class="mb-0">Price: @surfboard?.BookingEndDate</p>
+                                        <p class="mb-0">Start date: @(surfboard?.BookingStartDate.HasValue == true ? surfboard.BookingStartDate.Value.ToString("yyyy-MM-dd") : "N/A")</p>
+                                        <p class="mb-0">End date: @(surfboard?.BookingEndDate.HasValue == true ? surfboard.BookingEndDate.Value.ToString("yyyy-MM-dd") : "N/A")</p>
+                                        <p class="mb-0">Price pr. day: @surfboard?.Price DKK</p>
                                     </div>
                                 </div>
                                 <form id="addToBasketForm-@surfboard.SurfboardId" method="post" action="/Basket/RemoveFromBasket">
@@ -38,7 +41,22 @@
                     <h4>Samlet pris: <strong>@Basket.TotalPrice DKK</strong></h4>
                 </div>
                 <div class="text-end mt-3">
-                    <a href="/Checkout" class="btn btn-success">Gå til betaling</a>
+                    <form id="confirmBasketForm" method="post" action="/Home/ConfirmBasket">
+                        <div class="mb-3">
+                            <input type="text" name="Name" class="form-control" placeholder="Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="Email" class="form-control" placeholder="Email" required />
+                        </div>
+
+                        
+                        @foreach (var id in Basket.BoardsInBasket.Select(b => b.SurfboardId))
+                        {
+                            <input type="hidden" name="surfBoardIds" value="@id" />
+                        }
+
+                        <button class="btn btn-danger">Lej</button>
+                    </form>
                 </div>
             </div>
         </div>

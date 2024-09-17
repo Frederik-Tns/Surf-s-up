@@ -19,5 +19,20 @@ namespace Project.Models
         public List<Equipment>? Equipment { get; set;} = new List<Equipment>();
         public List<Booking>? Booking = new List<Booking>() { };
 
+
+
+        public string CheckIfBooked(bool isBooked)
+        {
+            if (isBooked)
+            {
+                return "Ikke på lager";
+            }
+
+            else
+            {
+                return "På lager";
+            }
+        }
+
     }
 }

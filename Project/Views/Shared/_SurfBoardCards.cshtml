@@ -1,4 +1,6 @@
-﻿<link href="/css/surfBoardCards.css" rel="stylesheet">
+﻿@model IEnumerable<Project.Models.Surfboard>
+
+<link href="/css/surfBoardCards.css" rel="stylesheet">
 <div class="row">
     @foreach (var surfboard in Model)
     {
@@ -10,67 +12,71 @@
                         <img class="card-image d-block mx-auto" src="@surfboard.ImageURL" alt="Surfboard Image" />
                         <h5 class="card-title text-center">@surfboard.Name</h5>
                         <p class="card-text text-center mt-3"><strong>Price pr. day:</strong> @surfboard.Price DKK</p>
-                        <p class="card-text text-center mt-3"><strong>In stock:</strong> @surfboard.IsBooked</p>
+                        <p class="card-text text-center mt-3"><strong>In stock:</strong> @surfboard.CheckIfBooked(surfboard.IsBooked)</p>
                     </div>
                 </div>
             </a>
         </div>
 
         <!-- Modal for each surfboard -->
+        
         <div class="modal fade" id="surfboardModal-@surfboard.SurfboardId" tabindex="-1" aria-labelledby="surfboardModalLabel-@surfboard.SurfboardId" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-                <!-- Added modal-lg to make it wider -->
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="surfboardModalLabel-@surfboard.SurfboardId"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <!-- Left column for the image -->
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img class="img-fluid" src="@surfboard.ImageURL" alt="Surfboard Image" />
-                            </div>
-                            <!-- Right column for the surfboard information -->
-                            <div class="col-md-6">
-                                <p><strong></strong> @surfboard.Name</p>
-                                <p><strong>Length:</strong> @surfboard.Length</p>
-                                <p><strong>Width:</strong> @surfboard.Width</p>
-                                <p><strong>Thickness:</strong> @surfboard.Thickness</p>
-                                <p><strong>Volume:</strong> @surfboard.Volume</p>
-                                @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
-                                {
-                                    <p><strong>Equipment:</strong></p>
-                                    <ul>
-                                        @foreach (var equipment in surfboard.Equipment)
-                                        {
-                                            <li>@equipment.Name</li>
-                                        }
-                                    </ul>
-                                }
-
-                                <p><strong>Booking start Date:</strong></p>
-                                <div class="input-group">
-                                    <input type="date" class="form-control" name="BookingStartDate" />
+                    <form method="post" action="/Basket/AddToBasket">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="surfboardModalLabel-@surfboard.SurfboardId"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="@surfboard.ImageURL" alt="Surfboard Image" />
                                 </div>
+                                <div class="col-md-6">
+                                    <p><strong>Name:</strong> @surfboard.Name</p>
+                                    <p><strong>Length:</strong> @surfboard.Length</p>
+                                    <p><strong>Width:</strong> @surfboard.Width</p>
+                                    <p><strong>Thickness:</strong> @surfboard.Thickness</p>
+                                    <p><strong>Volume:</strong> @surfboard.Volume</p>
+                                    @if (surfboard.Equipment != null && surfboard.Equipment.Count > 0)
+                                    {
+                                        <p><strong>Equipment:</strong></p>
+                                        <ul>
+                                            @foreach (var equipment in surfboard.Equipment)
+                                            {
+                                                <li>@equipment.Name</li>
+                                            }
+                                        </ul>
+                                    }
 
-                                <p><strong>Booking end Date:</strong></p>
-                                <div class="input-group">
-                                    <input type="date" class="form-control" name="BookingEndDate" />
+                                    <input type="hidden" name="SurfboardId" value="@surfboard.SurfboardId" />
+
+                                    <p><strong>Booking Start Date:</strong></p>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" name="BookingStartDate" />
+                                    </div>
+
+                                    <p><strong>Booking End Date:</strong></p>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" name="BookingEndDate" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                        <form id="addToBasketForm-@surfboard.SurfboardId" method="post" action="/Basket/AddToBasket">
-                            <input type="hidden" name="surfboardId" value="@surfboard.SurfboardId"/>
-                            <button type="submit" class="btn btn-primary">
-                                Lej board
-                            </button>
-                        </form>
-                    </div>
+                            @if (!surfboard.IsBooked)
+                            {
+                                <button type="submit" class="btn btn-primary">Lej board</button>
+                            }
+                            else
+                            {
+                                <button type="submit" class="btn btn-primary" disabled>Ikke på lager</button>
+                            }
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
