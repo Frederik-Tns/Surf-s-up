@@ -14,7 +14,8 @@ namespace Project.Models
         public double Price { get; set; }
         public string ImageURL { get; set; }
         public bool IsBooked { get; set; }
-        public List<Equipment> Equipment { get; set;} = new List<Equipment>();
-      
+        public List<Equipment>? Equipment { get; set;} = new List<Equipment>();
+        public List<Order? Order { get; set; } = new List<Order>();
+
     }
 }
