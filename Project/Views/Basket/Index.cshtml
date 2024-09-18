@@ -18,8 +18,8 @@
                                     <div class="ms-3">
                                         <h5>@surfboard?.Name</h5>
                                         <p class="mb-0">Type: @surfboard?.Type</p>
-                                        <p class="mb-0">Start date: @(surfboard?.BookingStartDate.HasValue == true ? surfboard.BookingStartDate.Value.ToString("yyyy-MM-dd") : "N/A")</p>
-                                        <p class="mb-0">End date: @(surfboard?.BookingEndDate.HasValue == true ? surfboard.BookingEndDate.Value.ToString("yyyy-MM-dd") : "N/A")</p>
+                                        <p class="mb-0">Start date: @(surfboard?.BookingStartDate)</p>
+                                        <p class="mb-0">End date: @(surfboard?.BookingEndDate)</p>
                                         <p class="mb-0">Price pr. day: @surfboard?.Price DKK</p>
                                     </div>
                                 </div>
@@ -29,23 +29,24 @@
                                 </form>
                             </li>
                         }
+
+                        <li class="text-end mt-4">
+                            <h4>Samlet pris: <strong>@Basket.TotalPrice DKK</strong></h4>
+                        </li>
                     }
                     else
                     {
                         <p>No rented boards available.</p>
                     }
                 </ul>
-                <div class="text-end mt-4">
-                    <h4>Samlet pris: <strong>@Basket.TotalPrice DKK</strong></h4>
-                </div>
 
 
                 <div class="text-end mt-3">
                     @{
-                        var hasPastStartDate = Basket.BoardsInBasket.Any(b => b.BookingStartDate.HasValue && b.BookingStartDate.Value < DateTime.Now);
+                        int surfboardCount = Basket.BoardsInBasket.Count();
                     }
 
-                    @if (!hasPastStartDate)
+                    @if (surfboardCount > 0)
                     {
                         <form id="confirmBasketForm" method="post" action="/Home/ConfirmBasket">
                             <div class="mb-3">
@@ -62,10 +63,6 @@
 
                             <button class="btn btn-danger" type="submit">Lej</button>
                         </form>
-                    }
-                    else
-                    {
-                        <p class="text-danger">En af dine bestillinger er bestilt i fortiden.</p>
                     }
                 </div>
             </div>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Routing;
+using System.ComponentModel.DataAnnotations;
 
 namespace Project.Models
 {
@@ -14,8 +15,11 @@ namespace Project.Models
         public double Price { get; set; }
         public string ImageURL { get; set; }
         public bool IsBooked { get; set; }
+
         public DateTime? BookingStartDate { get; set; }
+
         public DateTime? BookingEndDate { get; set; }
+
         public List<Equipment>? Equipment { get; set;} = new List<Equipment>();
         public List<Booking>? Booking = new List<Booking>() { };
 

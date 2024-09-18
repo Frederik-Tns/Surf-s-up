@@ -11,6 +11,8 @@ namespace Project.Controllers
         {
             surfboardRepo = new SurfboardRepo(_context);
         }
+
+
         public IActionResult SurfboardsByType(string type)
         {
             var validTypes = new List<string> { "Shortboards", "Funboards", "Fishs", "SUPs", "Longboards" };
