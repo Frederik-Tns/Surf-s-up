@@ -52,15 +52,21 @@
 
                                     <input type="hidden" name="SurfboardId" value="@surfboard.SurfboardId" />
 
-                                    <p><strong>Booking Start Date:</strong></p>
                                     <div class="input-group">
-                                        <input type="date" class="form-control" name="BookingStartDate" />
+                                        <input type="date" class="form-control" name="BookingStartDate" required id="bookingStartDate" />
                                     </div>
 
                                     <p><strong>Booking End Date:</strong></p>
                                     <div class="input-group">
-                                        <input type="date" class="form-control" name="BookingEndDate" />
+                                        <input type="date" class="form-control" name="BookingEndDate" required id="bookingEndDate" />
                                     </div>
+
+                                    <script>
+                                        
+                                        const today = new Date().toISOString().split('T')[0];
+                                        document.getElementById('bookingStartDate').setAttribute('min', today);
+                                        document.getElementById('bookingEndDate').setAttribute('min', today);
+                                    </script>
                                 </div>
                             </div>
                         </div>
