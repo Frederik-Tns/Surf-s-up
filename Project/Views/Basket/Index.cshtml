@@ -46,23 +46,22 @@
                         int surfboardCount = Basket.BoardsInBasket.Count();
                     }
 
-                    @if (surfboardCount > 0)
+                    @if (surfboardCount > 0 && LayoutModel.UserLogged != null && LayoutModel.UserLogged.Length > 0)
                     {
                         <form id="confirmBasketForm" method="post" action="/Home/ConfirmBasket">
-                            <div class="mb-3">
-                                <input type="text" name="Name" class="form-control" placeholder="Name" required />
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" name="Email" class="form-control" placeholder="Email" required />
-                            </div>
 
                             @foreach (var id in Basket.BoardsInBasket.Select(b => b.SurfboardId))
                             {
                                 <input type="hidden" name="surfBoardIds" value="@id" />
                             }
 
-                            <button class="btn btn-danger" type="submit">Lej</button>
+                            <button style="color: green" class="btn btn-danger" type="submit">Lej</button>
                         </form>
+                    }
+
+                    @if (LayoutModel.UserLogged == null || LayoutModel.UserLogged.Length == 0)
+                    {
+                        <p style="color: red">Du skal logge ind for at leje surfboards.</p>
                     }
                 </div>
             </div>
