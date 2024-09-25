@@ -42,20 +42,29 @@
                         </ul>
                     </li>
 
-                    <!-- Links -->
-                    <li class="nav-item"><a class="nav-link" href="#">Lokation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Om os</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kurser</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Account/Login"> <span style="color: green;"> Find dine bookings </span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Account/Register">Registrer</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Basket/index">
                             Kurv <span style="color: red;">     @Basket.TotalPrice DKK</span>
                         </a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Find dine bookings</a></li>
-               
+
+                    @if (LayoutModel.UserLogged != null && LayoutModel.UserLogged.Length > 0)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <span style="color: red;"> @LayoutModel.UserLogged</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Logout">
+                                <span style="color: red;"> Logout</span>
+                            </a>
+                        </li>
+                    }
+
                 </ul>
             </div>
         </div>
@@ -101,6 +110,19 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/Login.css">
+    <footer class="border-top footer text-muted custom-spacing2">
+        <div class="container">
+            &copy; 2024 - Surfsup - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 
 </html>

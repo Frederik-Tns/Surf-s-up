@@ -22,13 +22,12 @@
     align-items: center;
     padding: 10px;
 }
-
-.navbar-nav {
-    margin-right: 30%;
+.nav-item dropdown{
+    float: right;
 }
 
 main {
-    padding-top: 50px; 
+    padding-top: 50px;
 }
 
 li {

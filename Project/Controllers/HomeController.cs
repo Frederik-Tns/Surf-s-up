@@ -8,6 +8,7 @@ namespace Project.Controllers
         //Dependency injection af database
         private ApplicationDbContext _applicationDbContext;
         private readonly SurfboardRepo _surfboardRepo;
+        private AppUserRepo _appUserRepo;
 
         public IActionResult Index()
         {
@@ -17,46 +18,48 @@ namespace Project.Controllers
         }
 
         [HttpPost]
-        public IActionResult ConfirmBasket(string name, string email, string[] surfBoardIds)
+        public IActionResult ConfirmBasket(string[] surfBoardIds)
         {
             _applicationDbContext.Database.EnsureCreated();
             Basket.TotalPrice = 0;
 
-            User userToAdd = new User
+            if (LayoutModel.UserLogged.Length > 0)
             {
-                Name = name,
-                Email = email,
+                AppUser userToAdd = _appUserRepo.GetUser(LayoutModel.UserLogged);
 
-            };
-
-            Booking bookingToAdd = new Booking
-            {
-                User = userToAdd,
-                Surfboards = new List<Surfboard>()
-            };
-
-            if (surfBoardIds.Length > 0)
-            {
-                var surfboards = _surfboardRepo.GetSurfboardListByIds(surfBoardIds.Select(int.Parse).ToArray());
-                bookingToAdd.Surfboards.AddRange(surfboards);
-                
-                foreach(var board in surfboards)
+                Booking bookingToAdd = new Booking
                 {
-                    board.IsBooked = true;
+                    User = userToAdd,
+                    Surfboards = new List<Surfboard>()
+                };
+
+                if (surfBoardIds.Length > 0)
+                {
+                    var surfboards = _surfboardRepo.GetSurfboardListByIds(surfBoardIds.Select(int.Parse).ToArray());
+                    bookingToAdd.Surfboards.AddRange(surfboards);
+
+                    foreach (var board in surfboards)
+                    {
+                        board.IsBooked = true;
+                    }
                 }
+
+                _applicationDbContext.Bookings.Add(bookingToAdd);
+                _applicationDbContext.SaveChanges();
+                Basket.TotalPrice = 0;
             }
 
-            _applicationDbContext.Bookings.Add(bookingToAdd);
-            _applicationDbContext.SaveChanges();
+           
 
             return View("Index");
         }
 
 
-        public HomeController(ApplicationDbContext applicationDbContext, SurfboardRepo surfboardRepo)
+        public HomeController(ApplicationDbContext applicationDbContext, SurfboardRepo surfboardRepo, AppUserRepo appUserRepo)
         {
             _applicationDbContext = applicationDbContext;
             _surfboardRepo = surfboardRepo;
+            _appUserRepo = appUserRepo;
         }
     }
 }
