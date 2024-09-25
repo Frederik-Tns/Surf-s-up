@@ -20,6 +20,7 @@ namespace Project.Controllers
         public IActionResult ConfirmBasket(string name, string email, string[] surfBoardIds)
         {
             _applicationDbContext.Database.EnsureCreated();
+            Basket.TotalPrice = 0;
 
             User userToAdd = new User
             {
