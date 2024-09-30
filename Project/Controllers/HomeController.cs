@@ -5,7 +5,7 @@ namespace Project.Controllers
 {
     public class HomeController : Controller
     {
-        //Dependency injection af database
+        
         private ApplicationDbContext _applicationDbContext;
         private readonly SurfboardRepo _surfboardRepo;
         private AppUserRepo _appUserRepo;

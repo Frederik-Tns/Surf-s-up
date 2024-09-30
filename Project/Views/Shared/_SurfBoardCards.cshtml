@@ -5,7 +5,7 @@
     @foreach (var surfboard in Model)
     {
         <div class="col-md-4 mb-4">
-            <!-- Make the entire card clickable -->
+            
             <a href="#" data-bs-toggle="modal" data-bs-target="#surfboardModal-@surfboard.SurfboardId" class="text-decoration-none">
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
@@ -18,7 +18,7 @@
             </a>
         </div>
 
-        <!-- Modal for each surfboard -->
+       
         
         <div class="modal fade" id="surfboardModal-@surfboard.SurfboardId" tabindex="-1" aria-labelledby="surfboardModalLabel-@surfboard.SurfboardId" aria-hidden="true">
             <div class="modal-dialog modal-lg">

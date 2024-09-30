@@ -6,15 +6,15 @@ namespace Project.Models
 {
     public class SurfboardRepo
     {
-        private readonly ApplicationDbContext _context; // Use readonly for injected dependencies
+        private readonly ApplicationDbContext _context;
 
-        // Public constructor for dependency injection
+        
         public SurfboardRepo(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // Methods that interact with the database
+        
         public List<Surfboard> GetSurfBoardsByType(string type)
         {
             return _context.Surfboards.Where(s => s.Type == type).ToList();

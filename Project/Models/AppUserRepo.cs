@@ -20,7 +20,7 @@
 
         public string GetUserName(string email)
         {
-            var a = _context.Users.FirstOrDefault(u => u.Email == email); // Use FirstOrDefault instead of Find, assuming 'email' is unique
+            var a = _context.Users.FirstOrDefault(u => u.Email == email); 
 
             if (a == null)
             {
@@ -32,7 +32,7 @@
 
         public AppUser GetUser(string Name)
         {
-            AppUser a = _context.Users.FirstOrDefault(u => u.Name == Name); // Use FirstOrDefault instead of Find, assuming 'email' is unique
+            AppUser a = _context.Users.FirstOrDefault(u => u.Name == Name); 
 
             if (a == null)
             {
