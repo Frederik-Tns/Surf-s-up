@@ -1,0 +1,34 @@
+﻿@model List<Booking>
+
+@section title {
+}
+
+
+<div class="bookings-overview">
+    <h2>Bookings Overview</h2>
+    <ul class="booking-list">
+        @foreach (var booking in Model)
+        {
+            <li class="booking-list-item">
+                <ul class="surfboard-list">
+                    @foreach (var surfboard in booking.Surfboards)
+                    {
+                        <li class="surfboard-list-item">
+                            <div class="surfboard-details">
+                                <strong>@surfboard.Name</strong><br />
+                                <span>Length: @surfboard.Length m</span><br />
+                                <span>Width: @surfboard.Width m</span><br />
+                                <span>Thickness: @surfboard.Thickness m</span><br />
+                                <span>Volume: @surfboard.Volume L</span><br />
+                                <span>Type: @surfboard.Type</span><br />
+                                <span>Price: $@surfboard.Price</span><br />
+                                <span>Booking Start: @surfboard.BookingStartDate?.ToString("yyyy-MM-dd")</span><br />
+                                <span>Booking End: @surfboard.BookingEndDate?.ToString("yyyy-MM-dd")</span><br />
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</div>

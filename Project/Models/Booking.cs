@@ -6,8 +6,5 @@
         public AppUser? User { get; set; }
         public List<Surfboard>? Surfboards { get; set; }
 
-        
-        
-
     }
 }

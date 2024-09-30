@@ -1,41 +1,34 @@
-﻿namespace Project.Models
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Project.Models
 {
     public class BookingRepo
     {
-        private ApplicationDbContext _context;
-        private BookingRepo _instance;
+        private readonly ApplicationDbContext _context;
+        private List<Booking> _bookings;
 
-        public BookingRepo Instance
-        {
-            get { return _instance; }
-
-            set
-            {
-                if (_instance == null)
-                {
-                    _instance = value;
-                }
-
-            }
-        }
-
-        private List<Booking> _booking;
-
-		public List<Booking> Booking
-		{
-			get { return _booking; }
-			set { _booking = value; }
-		}
-
+        
         public BookingRepo(ApplicationDbContext context)
         {
             _context = context;
+            LoadBookings(); 
         }
 
-        public void AddBooking(Booking booking) 
+        public List<Booking> Bookings => _bookings;
+
+        public void AddBooking(Booking booking)
         {
             _context.Bookings.Add(booking);
             _context.SaveChanges();
+            _bookings.Add(booking);
+        }
+
+        private void LoadBookings()
+        {
+            _bookings = _context.Bookings
+                .Include(b => b.User)
+                .Include(b => b.Surfboards)
+                .ToList();
         }
 
     }
