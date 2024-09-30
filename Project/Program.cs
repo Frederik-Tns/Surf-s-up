@@ -26,6 +26,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 
 builder.Services.AddScoped<BasketService>();
 builder.Services.AddScoped<SurfboardRepo>();
+builder.Services.AddScoped<BookingRepo>();
 builder.Services.AddScoped<AppUserRepo>();
 
 var app = builder.Build();

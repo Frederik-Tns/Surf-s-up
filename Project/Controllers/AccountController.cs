@@ -11,14 +11,16 @@ namespace Project.Controllers
         private readonly SignInManager<AppUser> _signInManager;
         private readonly UserManager<AppUser> _userManager;
         private readonly AppUserRepo _appUserRepo;
+        private readonly BookingRepo _bookingRepo;
 
 
-        public AccountController(ApplicationDbContext applicationDbContext, SignInManager<AppUser> signInManager, UserManager<AppUser> userManager, AppUserRepo appUserRepo)
+        public AccountController(ApplicationDbContext applicationDbContext, SignInManager<AppUser> signInManager, UserManager<AppUser> userManager, AppUserRepo appUserRepo, BookingRepo bookingRepo)
         {
             _applicationDbContext = applicationDbContext;
             _signInManager = signInManager;
             _userManager = userManager;
             _appUserRepo = appUserRepo;
+            _bookingRepo = bookingRepo;
         }
 
 
@@ -26,6 +28,12 @@ namespace Project.Controllers
         {
             ViewData["ReturnUrl"] = returnUrl;
             return View();
+        }
+
+        public IActionResult Booking()
+        {
+            var bookings = _bookingRepo.Bookings;
+            return View(bookings);
         }
 
         [HttpPost]

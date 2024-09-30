@@ -41,7 +41,16 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="/Account/Login"> <span style="color: green;"> Find dine bookings </span></a></li>
+                    @if (LayoutModel.UserLogged == null)
+                    {
+                        <li class="nav-item"><a class="nav-link" href="/Account/Login"> <span style="color: green;">Login</span></a></li>
+                    }
+
+                    @if (LayoutModel.UserLogged != null)
+                    {
+                        <li class="nav-item"><a class="nav-link" href="/Account/Booking"> <span style="color: green;">Se bookings</span></a></li>
+                    }
+                    
                     <li class="nav-item"><a class="nav-link" href="/Account/Register">Registrer</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Basket/index">

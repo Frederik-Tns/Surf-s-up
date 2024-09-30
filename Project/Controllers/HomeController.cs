@@ -18,7 +18,7 @@ namespace Project.Controllers
         }
 
         [HttpPost]
-        public IActionResult ConfirmBasket(string[] surfBoardIds)
+        public IActionResult ConfirmBasket(string[] surfBoardIds, DateTime start, DateTime end)
         {
             _applicationDbContext.Database.EnsureCreated();
             Basket.TotalPrice = 0;
