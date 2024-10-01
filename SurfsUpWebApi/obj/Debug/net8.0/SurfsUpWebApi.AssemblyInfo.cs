@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SurfsUpWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b86d3835616564f0b682f64e12ae353b9c8d45e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37ff0ea90ca5c5ab5d963ace46a23f0798c26252")]
 [assembly: System.Reflection.AssemblyProductAttribute("SurfsUpWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SurfsUpWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
