@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpApiProject\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {}
+    "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpApiProject\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {
+    "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpApiProject\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
         "projectName": "SurfsUpWebApi",
-        "projectPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpApiProject\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
+        "projectPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
         "packagesPath": "C:\\Users\\frede\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpApiProject\\SurfsUpWebApi\\obj\\",
+        "outputPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\frede\\AppData\\Roaming\\NuGet\\NuGet.Config",
