@@ -19,16 +19,16 @@ namespace SurfsUpWebApi.Controllers
         public Surfboard GetById(int id)
         {   
             var surfboard = _surfboards.FirstOrDefault(s => s.SurfboardId == id);
-            if (surfboard == null)
-                return NotFound();
+          
+               
             return surfboard;
         }
 
         [HttpGet("{type}")]
-        public Surfboard GetByType(Types type)
+        /* public Surfboard GetByType(Types type)
         {
 
-        }
+        } */
 
         [HttpPost]
         public string CreateSurfBoard()

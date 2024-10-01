@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
-        "projectName": "SurfsUpWebApi",
-        "projectPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
-        "packagesPath": "C:\\Users\\frede\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\SurfsUpWebApi\\obj\\",
-=======
     "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\SurfsUpWebApi.csproj",
         "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\obj\\",
->>>>>>> 56a018bd1c8bef631058cd55c7d576b0ab629f40
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +54,19 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },

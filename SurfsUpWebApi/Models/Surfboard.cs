@@ -4,11 +4,11 @@ namespace SurfsUpWebApi.Models
 {
     public class Surfboard
     {
-        [Required]
+        [Required, Key]
         public int SurfboardId { get; set; }
 
         [Required]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; } 
 
         [Required]
         public double Length { get; set; }
@@ -23,13 +23,10 @@ namespace SurfsUpWebApi.Models
         public double Volume { get; set; }
 
         [Required]
-        public string Type { get; set; } = string.Empty;
-
-        [Required]
         public double Price { get; set; }
 
         [Url]
-        public string ImageURL { get; set; }
+        public string? ImageURL { get; set; } 
 
         [Required]
         Types Types { get; set; }

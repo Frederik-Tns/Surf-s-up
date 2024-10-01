@@ -1,4 +1,9 @@
 
+using SurfsUpWebApi.Models;
+
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
+using SurfsUpWebApi.Data;
 namespace SurfsUpWebApi
 {
     public class Program
@@ -14,6 +19,10 @@ namespace SurfsUpWebApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -22,6 +31,7 @@ namespace SurfsUpWebApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 

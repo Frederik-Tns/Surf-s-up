@@ -1,8 +1,13 @@
-﻿namespace SurfsUpWebApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SurfsUpWebApi.Models
 {
     public class Equipment
     {
+
+        [Required]
         public int EquipmentId { get; set; }
-        public string Name { get; set; } = string.Empty;
+        [Required]
+        public string? Name { get; set; } 
     }
 }
