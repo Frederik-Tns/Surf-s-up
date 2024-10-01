@@ -1,0 +1,6 @@
+@SurfsUpWebApi_HostAddress = http://localhost:5122
+
+GET {{SurfsUpWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
