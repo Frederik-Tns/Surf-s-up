@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\surfsupapi.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:surfsupapi.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:models\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|solutionrelative:models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AC49759-383F-4819-9517-8DD8EEC8639A}|SurfsUpWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surf-s-up\\surfsupwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -46,22 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 20,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SurfsUpApi.db",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\SurfsUpApi.db",
-              "RelativeDocumentMoniker": "SurfsUpApi.db",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\SurfsUpApi.db",
-              "RelativeToolTip": "SurfsUpApi.db",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIKSURBVDhPrZXfS1NhGMe/EynnCI7roG2w3OaOa4vMcgV2YQjdeWV3QlBmECQIYlMKVMRQYnhRiSQUhQjd9D\u002BsC3HJbhTaav7YHMdIsoGghW5nO72Op9yB98hJ\u002BsDhPc/7fPmc9z0HzmsC8WggmAJUJ5VHYFpXCmgPhUKLNHGIqqolwofqyOgYVfoMDz6G2Wze3vm518qTltH4T9zp7BJOWSrCwWCwkab\u002BcizhGZtdV3os4QF60nIauWxsbiGxJsMvOWGrthbnBEEovscShPIyhNlYdVBwhb/29rH0eQ3Z/Sx2dncRX0kimZYhuR3o7eun1CHsAQLd8rccW07h\u002B1YGhUIegQYf8nkF6Y1vkL9uUkIfrrDR54GiKPA4HXCdtcPrrmV1Dhd8EiX00VlhErlcFrHEKlaSaSzFl1mdw4f5KCX04QptNSL7CGJREp5bQJ6ttlqsQnPTRUrowxXWiFZcb25CA9tixckT8HvduNFyDSlZRvfAIBY/xfAjk6G0Fq7wD7UOOzputsFb58KLV2/x8s0sztd78GxqGtOvZyil5UhhKX6prih70HWbfZxzqJfc1NFiWBj/ksBCNIqJ55OYj3xkV4Q6WgwL797qQM/9e4gwWX9vD54MD1FHi2GheNqKwOVLeP9uFlevBGCxVFJHi2GhUf67sOSP3ceOAJOBI4CHuj7\u002BdMIFAL8B2kWpjQLikHsAAAAASUVORK5CYII=",
-              "WhenOpened": "2024-10-01T10:04:26.069Z"
+              "$type": "Bookmark",
+              "Name": "ST:872110643:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:161584100:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "SurfboardRepo.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
+              "RelativeDocumentMoniker": "Models\\SurfboardRepo.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
+              "RelativeToolTip": "Models\\SurfboardRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T10:28:41.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Surfboard.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Surfboard.cs",
+              "RelativeDocumentMoniker": "Models\\Surfboard.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Surfboard.cs",
+              "RelativeToolTip": "Models\\Surfboard.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:46:13.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Equipment.cs",
               "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "Models\\Equipment.cs",
@@ -74,63 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Surfboard.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Surfboard.cs",
-              "RelativeDocumentMoniker": "Models\\Surfboard.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Surfboard.cs",
-              "RelativeToolTip": "Models\\Surfboard.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAoAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:46:13.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:45:01.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SurfboardRepo.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
-              "RelativeDocumentMoniker": "Models\\SurfboardRepo.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
-              "RelativeToolTip": "Models\\SurfboardRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:35:32.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-01T09:18:46.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -143,20 +154,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:45:01.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SurfboardController.cs",
               "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Controllers\\SurfboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
               "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Controllers\\SurfboardController.cs",
               "RelativeToolTip": "Controllers\\SurfboardController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAIA/wBAAAAAAAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAADwvzQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T09:19:03.896Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -164,8 +188,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-01T09:18:40.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T09:18:40.379Z"
             }
           ]
         }

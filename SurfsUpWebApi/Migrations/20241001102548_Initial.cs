@@ -22,7 +22,8 @@ namespace SurfsUpWebApi.Migrations
                     Thickness = table.Column<double>(type: "REAL", nullable: false),
                     Volume = table.Column<double>(type: "REAL", nullable: false),
                     Price = table.Column<double>(type: "REAL", nullable: false),
-                    ImageURL = table.Column<string>(type: "TEXT", nullable: true)
+                    ImageURL = table.Column<string>(type: "TEXT", nullable: true),
+                    Type = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

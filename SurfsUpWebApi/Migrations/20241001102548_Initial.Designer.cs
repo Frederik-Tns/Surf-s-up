@@ -11,7 +11,7 @@ using SurfsUpWebApi.Data;
 namespace SurfsUpWebApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241001100211_Initial")]
+    [Migration("20241001102548_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -61,6 +61,10 @@ namespace SurfsUpWebApi.Migrations
 
                     b.Property<double>("Thickness")
                         .HasColumnType("REAL");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<double>("Volume")
                         .HasColumnType("REAL");

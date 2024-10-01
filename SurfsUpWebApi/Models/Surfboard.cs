@@ -29,7 +29,7 @@ namespace SurfsUpWebApi.Models
         public string? ImageURL { get; set; } 
 
         [Required]
-        Types Types { get; set; }
+        public string? Type { get; set; }
 
         public List<Equipment>? Equipment { get; set; } = new List<Equipment>();
     }

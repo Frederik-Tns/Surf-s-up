@@ -59,6 +59,10 @@ namespace SurfsUpWebApi.Migrations
                     b.Property<double>("Thickness")
                         .HasColumnType("REAL");
 
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<double>("Volume")
                         .HasColumnType("REAL");
 
