@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,10 +55,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:11:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
@@ -101,16 +97,32 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SurfboardRepo.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
-              "RelativeDocumentMoniker": "Models\\SurfboardRepo.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
-              "RelativeToolTip": "Models\\SurfboardRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "DocumentIndex": 5,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Equipment.cs",
+              "RelativeDocumentMoniker": "Models\\Equipment.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Equipment.cs",
+              "RelativeToolTip": "Models\\Equipment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T10:28:41.68Z",
+              "WhenOpened": "2024-10-01T09:46:37.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SurfboardController.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Controllers\\SurfboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Controllers\\SurfboardController.cs",
+              "RelativeToolTip": "Controllers\\SurfboardController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:19:03.896Z",
               "EditorCaption": ""
             },
             {
@@ -123,21 +135,19 @@
               "RelativeToolTip": "Models\\Surfboard.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAUwBwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:46:13.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T09:46:13.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Equipment.cs",
-              "RelativeDocumentMoniker": "Models\\Equipment.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\Equipment.cs",
-              "RelativeToolTip": "Models\\Equipment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "DocumentIndex": 2,
+              "Title": "SurfboardRepo.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
+              "RelativeDocumentMoniker": "Models\\SurfboardRepo.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Models\\SurfboardRepo.cs",
+              "RelativeToolTip": "Models\\SurfboardRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:46:37.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T10:28:41.68Z"
             },
             {
               "$type": "Document",
@@ -149,8 +159,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:18:48.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T09:18:48.992Z"
             },
             {
               "$type": "Document",
@@ -162,21 +171,7 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:45:01.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SurfboardController.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Controllers\\SurfboardController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surf-s-up\\SurfsUpWebApi\\Controllers\\SurfboardController.cs",
-              "RelativeToolTip": "Controllers\\SurfboardController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAADwvzQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:19:03.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T09:45:01.841Z"
             },
             {
               "$type": "Document",

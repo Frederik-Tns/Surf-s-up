@@ -50,7 +50,7 @@ namespace SurfsUpWebApi.Controllers
             List<Surfboard> SurfboardsByType = new List<Surfboard>();  
             foreach (var surfboard in _context.Surfboards) 
             { if (surfboard.Type == type) SurfboardsByType.Add(surfboard); }
-
+    
         return SurfboardsByType;
             
         }
