@@ -2,7 +2,7 @@
 
 namespace Surf_s_up.Models
 {
-    enum Types {
+    public enum Types {
         [Description("The Mini Log")]
         TheMinilog,
 
