@@ -8,17 +8,17 @@ using Project.Data;
 
 #nullable disable
 
-namespace Project.Data.Migrations
+namespace Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241005071907_asdsa3")]
-    partial class asdsa3
+    [Migration("20241009093821_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {

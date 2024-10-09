@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\",
+  "WorkspaceRootPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\apimodel\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:apimodel\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\apimodel\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\apimodel\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:apimodel\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\rasmu\\onedrive\\skrivebord\\surfupv2\\projectwebapi\\projectwebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\apimodel\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:apimodel\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\surfupv2\\projectwebapi\\projectwebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:projectwebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
@@ -38,84 +42,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:10:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:11:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:2040069276:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:13:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:14:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:15:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:16:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:17:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:777357124:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+              "Name": "ST:2042562719:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:12:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:2088629290:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SurfboardController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Controllers\\SurfboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Controllers\\SurfboardController.cs",
+              "RelativeToolTip": "Controllers\\SurfboardController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:33:57.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\Controllers\\BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Controllers\\BookingController.cs",
               "RelativeToolTip": "Controllers\\BookingController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAiwDMAAAAPAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T18:58:02.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\ApiModel\\Booking.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\ApiModel\\Booking.cs",
               "RelativeDocumentMoniker": "ApiModel\\Booking.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\ApiModel\\Booking.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\ApiModel\\Booking.cs",
               "RelativeToolTip": "ApiModel\\Booking.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,59 +124,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T21:40:37.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:49:17.947Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:51:38.103Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T21:40:37.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Surfboard.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\ApiModel\\Surfboard.cs",
-              "RelativeDocumentMoniker": "ApiModel\\Surfboard.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\ApiModel\\Surfboard.cs",
-              "RelativeToolTip": "ApiModel\\Surfboard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:55:14.641Z"
+              "WhenOpened": "2024-10-04T18:49:17.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T18:51:38.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Surfboard.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\ApiModel\\Surfboard.cs",
+              "RelativeDocumentMoniker": "ApiModel\\Surfboard.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\ApiModel\\Surfboard.cs",
+              "RelativeToolTip": "ApiModel\\Surfboard.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T18:55:14.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProjectWebApi.http",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\ProjectWebApi.http",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\ProjectWebApi.http",
               "RelativeDocumentMoniker": "ProjectWebApi.http",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Skrivebord\\Surfupv2\\ProjectWebApi\\ProjectWebApi.http",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Surfupv2\\ProjectWebApi\\ProjectWebApi.http",
               "RelativeToolTip": "ProjectWebApi.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",

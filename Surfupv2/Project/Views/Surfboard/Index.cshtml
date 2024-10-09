@@ -1,24 +1,47 @@
 ﻿@model List<Project.Models.Surfboard>
 
-<h2>Surfboards</h2>
+<h2>Available Surfboards</h2>
 
-<div class="surfboards">
-    @foreach (var board in Model)
-    {
-        <div class="surfboard">
-            <h3>@board.Name</h3>
-            <img src="@board.ImageURL" alt="@board.Name" style="width:200px;" />
-            <p>Length: @board.Length</p>
-            <p>Width: @board.Width</p>
-            <p>Thickness: @board.Thickness</p>
-            <p>Volume: @board.Volume</p>
-            <p>Type: @board.Type</p>
-            <p>Price: @board.Price DDK</p>
-
-            <!-- Knappen der leder til bookingformularen -->
-            <form asp-action="Book" asp-route-id="@board.Id" method="get">
-                <button type="submit" class="btn btn-primary">Book this Surfboard</button>
-            </form>
-        </div>
-    }
-</div>
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Length</th>
+                <th>Width</th>
+                <th>Thickness</th>
+                <th>Volume</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var surfboard in Model)
+            {
+                <tr>
+                    <td><img src="@surfboard.ImageURL" alt="@surfboard.Name" style="width:100px;" /></td>
+                    <td>@surfboard.Name</td>
+                    <td>@surfboard.Length</td>
+                    <td>@surfboard.Width</td>
+                    <td>@surfboard.Thickness</td>
+                    <td>@surfboard.Volume</td>
+                    <td>@surfboard.Type</td>
+                    <td>@string.Format("{0:C}", surfboard.Price)</td>
+                    <td>
+                        <form asp-action="AddToCart" method="post">
+                            <input type="hidden" name="name" value="@surfboard.Name" />
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No surfboards are available at the moment.</p>
+}

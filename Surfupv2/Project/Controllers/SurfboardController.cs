@@ -1,105 +1,81 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Project.Data;
+using Newtonsoft.Json;
 using Project.Models;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Project.Controllers
 {
     public class SurfboardController : Controller
     {
-      
         private readonly HttpClient _httpClient;
-    
 
         public SurfboardController(HttpClient httpClient)
         {
-            
             _httpClient = httpClient;
-            
         }
 
-
-
-        public async Task<IActionResult> Index() 
+        // GET: Surfboard/Index
+        public async Task<IActionResult> Index()
         {
+            // Fetch surfboards from the API
             var surfboards = await GetAllBoards();
-            return View(surfboards);
+
+            if (surfboards == null)
+            {
+                return View(new List<Surfboard>()); // Return an empty list in case of error
+            }
+
+            return View(surfboards); // Pass the list of surfboards to the view
         }
 
-        [HttpGet] // Henter alle boards til visning
+        // This method fetches surfboards from the Web API
+        [HttpGet]
         private async Task<List<Surfboard>> GetAllBoards()
         {
-            var response = await _httpClient.GetAsync("https://localhost:7194/Booking");
+            var response = await _httpClient.GetAsync("https://localhost:7194/api/SurfboardApi"); // Call your API
 
             if (response.IsSuccessStatusCode)
             {
-                var surfboards = await response.Content.ReadFromJsonAsync<List<Surfboard>>();
-                return surfboards; // Returnér surfboards til Index
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var surfboards = JsonConvert.DeserializeObject<List<Surfboard>>(jsonResponse);
+                return surfboards;
             }
 
-            // Returnér en tom liste, hvis API-anmodningen fejler
-            return new List<Surfboard>();
+            return null; // Return null if the API request fails
         }
-
-
-
-
-
-        // Sender det valgte Surfboard's Id videre til viewet som et booking objekt
-        public async Task<IActionResult> Book(int id) // bruges i Index Viewet
+        public IActionResult Cart()
         {
-         
-            var surfboards = await GetAllBoards();
-   
-            var surfboard = surfboards.FirstOrDefault(sb => sb.Id == id);
-
-            if (surfboard == null)
-            {
-                return NotFound();
-            }
-
-            // Opret en bookingmodel og tilføj surfboard objektet
-            var booking = new Booking 
-            { 
-                Surfboard = surfboard, 
-                SurfboardId = surfboard.Id 
-            };
-
-            return View(booking);
+            Cart cart = GetCart();  // Retrieve the cart from the session or another storage
+            return View(cart);  // Pass the cart to the view
         }
-
-
 
         [HttpPost]
-        public async Task<IActionResult> Create(Booking booking) // Api kald, og tilføjelse af dato'er
+        public IActionResult AddToCart(string name)
         {
-            if (ModelState.IsValid)
+            var surfboards = GetAllBoards().Result;
+            var selectedBoard = surfboards.FirstOrDefault(s => s.Name == name);
+
+            if (selectedBoard != null)
             {
-                // Hent surfboardet fra API i stedet for databasen
-                var surfboards = await GetAllBoards();
-                var surfboard = surfboards.FirstOrDefault(sb => sb.Id == booking.SurfboardId);
-
-                if (surfboard != null)
-                {
-                    // Tildel surfboard-objektet til booking
-                    booking.Surfboard = surfboard;
-                }
-
-                // Send booking-objektet til API'et
-                var response = await _httpClient.PostAsJsonAsync("https://localhost:7194/Booking", booking);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    // Hvis API-anmodningen er succesfuld
-                    return RedirectToAction("Index");
-                }
+                Cart cart = GetCart();
+                cart.AddSurfboard(selectedBoard);
+                SaveCart(cart);
             }
 
-            return View(booking);
+            return RedirectToAction("Index"); // Redirect back to the surfboard list
         }
+        private Cart GetCart()
+        {
+            var cart = HttpContext.Session.GetString("Cart");
+            if (cart == null)
+            {
+                return new Cart();
+            }
 
+            return JsonConvert.DeserializeObject<Cart>(cart);
+        }
+        private void SaveCart(Cart cart)
+        {
+            HttpContext.Session.SetString("Cart", JsonConvert.SerializeObject(cart));
+        }
     }
 }

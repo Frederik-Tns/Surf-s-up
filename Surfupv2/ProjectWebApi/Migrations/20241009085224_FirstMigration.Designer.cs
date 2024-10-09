@@ -11,8 +11,8 @@ using ProjectWebApi.Data;
 namespace ProjectWebApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241005072107_asd")]
-    partial class asd
+    [Migration("20241009085224_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
