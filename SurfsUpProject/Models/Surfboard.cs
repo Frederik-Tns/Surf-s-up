@@ -4,7 +4,7 @@ namespace Surf_s_up.Models
 {
     public class Surfboard
     {
-        public Surfboard(int surfboardId, string name, double length, double width, double thickness, double volume, string type, double price, string imageURL, Types types, List<Equipment>? equipment)
+        public Surfboard(int surfboardId, string name, double length, double width, double thickness, double volume, string type, double price, string imageURL)
         {
             SurfboardId = surfboardId;
             Name = name;
@@ -15,8 +15,6 @@ namespace Surf_s_up.Models
             Type = type;
             Price = price;
             ImageURL = imageURL;
-            Types = types;
-            Equipment = equipment;
         }
         /* Example of constructor chaining
         public Surfboard(int surfboardId, string name, double length, double width, double thickness, double volume, string type, double price, string imageURL, List<Equipment>? equipment)
@@ -53,10 +51,7 @@ namespace Surf_s_up.Models
         public string ImageURL { get; set; }
 
         [Required]
-        Types Types { get; set; }
-
-        public List<Equipment>? Equipment { get; set; } = new List<Equipment>();
-
+        public bool Availability { get; set; }
 
     }
 }
