@@ -1,0 +1,24 @@
+﻿@model List<Project.Models.Surfboard>
+
+<h2>Surfboards</h2>
+
+<div class="surfboards">
+    @foreach (var board in Model)
+    {
+        <div class="surfboard">
+            <h3>@board.Name</h3>
+            <img src="@board.ImageURL" alt="@board.Name" style="width:200px;" />
+            <p>Length: @board.Length</p>
+            <p>Width: @board.Width</p>
+            <p>Thickness: @board.Thickness</p>
+            <p>Volume: @board.Volume</p>
+            <p>Type: @board.Type</p>
+            <p>Price: @board.Price DDK</p>
+
+            <!-- Knappen der leder til bookingformularen -->
+            <form asp-action="Book" asp-route-id="@board.Id" method="get">
+                <button type="submit" class="btn btn-primary">Book this Surfboard</button>
+            </form>
+        </div>
+    }
+</div>

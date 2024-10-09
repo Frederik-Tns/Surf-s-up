@@ -1,0 +1,38 @@
+﻿@model Project.Models.Booking
+
+@{
+    ViewData["Title"] = "Book a Surfboard";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <strong>Surfboard Name:</strong> @Model.Surfboard?.Name<br />
+    <strong>Length:</strong> @Model.Surfboard?.Length<br />
+    <strong>Width:</strong> @Model.Surfboard?.Width<br />
+    <strong>Price per Day:</strong> @Model.Surfboard?.Price DDK
+    
+</p>
+
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="SurfboardId" />  <!-- Pass surfboard Id -->
+
+    <div class="form-group">
+        <label asp-for="StartDate" class="control-label"></label>
+        <input asp-for="StartDate" class="form-control" type="date" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EndDate" class="control-label"></label>
+        <input asp-for="EndDate" class="form-control" type="date" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Booking</button>
+</form>
+
+<div>
+    @if (ViewBag.Message != null)
+    {
+        <p>@ViewBag.Message</p>
+    }
+</div>
