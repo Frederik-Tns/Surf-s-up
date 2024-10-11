@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SurfsUpWebApi/.vs/SurfsUpWebApi/FileContentIndex/443e9156-48e8-410a-95e4-c7d9cc8a41da.vsidx
+/SurfsUpWebApi/.vs/SurfsUpWebApi/FileContentIndex/5b52b6e5-b29a-48e7-b158-36785727f1c4.vsidx
+/SurfsUpWebApi/.vs/SurfsUpWebApi/FileContentIndex/af7e8587-2b74-431b-a6aa-c6c30cd4d34e.vsidx
+/SurfsUpWebApi/.vs/SurfsUpWebApi/FileContentIndex/b7be3952-d1eb-4f46-ac94-204700bd0f99.vsidx
+/Project/.vs/Project/FileContentIndex/6bb4cf9d-179f-4c97-bda1-f4d54d104806.vsidx
+/Project/.vs/Project/FileContentIndex/ba86a472-50f8-4ce3-8525-aaf572a66422.vsidx
+/Project/.vs/Project/FileContentIndex/e09536cb-7fec-4399-bfb7-c101dc3c80c8.vsidx
+/Project/.vs/Project/FileContentIndex/daf4776e-cbff-4b32-9a2d-c6c6a71b0be0.vsidx
+/Project/.vs/Project/FileContentIndex/efafd65b-833f-4e6c-909c-bce2a8cf1ae7.vsidx
+/Project/.vs/ProjectEvaluation/mvc.metadata.v8.bin
+/Project/.vs/ProjectEvaluation/mvc.projects.v8.bin
