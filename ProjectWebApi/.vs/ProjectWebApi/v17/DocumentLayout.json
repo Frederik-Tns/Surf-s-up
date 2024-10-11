@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\projectwebapi\\apimodel\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:apimodel\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\projectwebapi\\apimodel\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:apimodel\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\projectwebapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\projectwebapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\projectwebapi\\apimodel\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:apimodel\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\projectwebapi\\controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E3F64F8-9FE7-420D-A38E-8C9174045B57}|ProjectWebApi.csproj|solutionrelative:controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2040069276:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:777357124:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2042562719:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T07:02:32.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Surfboard.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\ApiModel\\Surfboard.cs",
+              "RelativeDocumentMoniker": "ApiModel\\Surfboard.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\ApiModel\\Surfboard.cs",
+              "RelativeToolTip": "ApiModel\\Surfboard.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T07:01:35.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\ApiModel\\Booking.cs",
+              "RelativeDocumentMoniker": "ApiModel\\Booking.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\ApiModel\\Booking.cs",
+              "RelativeToolTip": "ApiModel\\Booking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:12:44.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\ApiModel\\Cart.cs",
+              "RelativeDocumentMoniker": "ApiModel\\Cart.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\ApiModel\\Cart.cs",
+              "RelativeToolTip": "ApiModel\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T07:00:52.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwAwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:03:32.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SurfboardController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\Controllers\\SurfboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\ProjectWebApi\\Controllers\\SurfboardController.cs",
+              "RelativeToolTip": "Controllers\\SurfboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T12:51:21.148Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

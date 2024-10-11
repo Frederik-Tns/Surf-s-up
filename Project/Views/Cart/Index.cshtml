@@ -1,0 +1,34 @@
+﻿@model Project.Models.Cart
+
+<h2>Your Cart</h2>
+
+@if (Model.Surfboards.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Length</th>
+                <th>Width</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var surfboard in Model.Surfboards)
+            {
+                <tr>
+                    <td>@surfboard.Name</td>
+                    <td>@surfboard.Length</td>
+                    <td>@surfboard.Width</td>
+                    <td>@surfboard.Type</td>
+                    <td>@string.Format("{0:C}", surfboard.Price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Your cart is empty.</p>
+}

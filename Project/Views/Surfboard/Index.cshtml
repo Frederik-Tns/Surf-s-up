@@ -1,0 +1,54 @@
+﻿@model List<Project.Models.Surfboard>
+
+<h2>Available Surfboards</h2>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Length</th>
+                <th>Width</th>
+                <th>Thickness</th>
+                <th>Volume</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var surfboard in Model)
+            {
+                <tr>
+                    <td><img src="@surfboard.ImageURL" alt="@surfboard.Name" style="width:100px;" /></td>
+                    <td>@surfboard.Name</td>
+                    <td>@surfboard.Length</td>
+                    <td>@surfboard.Width</td>
+                    <td>@surfboard.Thickness</td>
+                    <td>@surfboard.Volume</td>
+                    <td>@surfboard.Type</td>
+                    <td>@string.Format("{0:C}", surfboard.Price)</td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                            <input type="hidden" name="Name" value="@surfboard.Name" />
+                            <input type="hidden" name="Length" value="@surfboard.Length" />
+                            <input type="hidden" name="Width" value="@surfboard.Width" />
+                            <input type="hidden" name="Thickness" value="@surfboard.Thickness" />
+                            <input type="hidden" name="Volume" value="@surfboard.Volume" />
+                            <input type="hidden" name="Type" value="@surfboard.Type" />
+                            <input type="hidden" name="Price" value="@surfboard.Price" />
+                            <input type="hidden" name="ImageURL" value="@surfboard.ImageURL" />
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No surfboards are available at the moment.</p>
+}
