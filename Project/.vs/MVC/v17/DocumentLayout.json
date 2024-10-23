@@ -1,85 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\",
+  "WorkspaceRootPath": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\views\\surfboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\surfboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:controllers\\surfboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\services\\surfboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:services\\surfboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\migrations\\20241009093821_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\views\\surfboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:views\\surfboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\services\\surfboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:services\\surfboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\migrations\\20241009093821_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:migrations\\20241009093821_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 2\\surf-s-up\\project\\mvc.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|c:\\users\\frede\\onedrive\\desktop\\repositories 1\\surf-s-up\\project\\mvc.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{80B04B00-AFF8-464B-81B0-1C2DAF967A61}|MVC.csproj|solutionrelative:mvc.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -90,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 332,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,83 +134,102 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SurfboardService.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Services\\SurfboardService.cs",
-              "RelativeDocumentMoniker": "Services\\SurfboardService.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Services\\SurfboardService.cs",
-              "RelativeToolTip": "Services\\SurfboardService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "DocumentIndex": 0,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T07:47:06.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-11T07:08:42.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Controllers\\CartController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T06:58:43.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SurfboardController.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Controllers\\SurfboardController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Controllers\\SurfboardController.cs",
-              "RelativeToolTip": "Controllers\\SurfboardController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:36:30.417Z"
+              "WhenOpened": "2024-10-23T07:20:43.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAiwBUAAAAvAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T07:08:42.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T07:25:44.788Z"
+              "WhenOpened": "2024-10-10T13:19:37.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwCUAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T13:20:22.462Z"
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T06:58:43.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:11:57.917Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SurfboardController.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\SurfboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SurfboardController.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Controllers\\SurfboardController.cs",
+              "RelativeToolTip": "Controllers\\SurfboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:36:30.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwCUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T13:20:22.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Models\\Cart.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Models\\Cart.cs",
               "RelativeToolTip": "Models\\Cart.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -214,24 +237,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwBUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T07:25:44.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Models\\Booking.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Models\\Booking.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Models\\Booking.cs",
               "RelativeToolTip": "Models\\Booking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T07:05:05.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T13:15:23.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SurfboardService.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Services\\SurfboardService.cs",
+              "RelativeDocumentMoniker": "Services\\SurfboardService.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Services\\SurfboardService.cs",
+              "RelativeToolTip": "Services\\SurfboardService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T07:47:06.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Surfboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Surfboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Surfboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Surfboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Views\\Surfboard\\Index.cshtml",
               "RelativeToolTip": "Views\\Surfboard\\Index.cshtml",
               "ViewState": "AQIAABgAAAAAAAAAAAAAACEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -239,47 +299,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T14:11:57.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T13:15:23.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:19:37.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "20241009093821_FirstMigration.cs",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Migrations\\20241009093821_FirstMigration.cs",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Migrations\\20241009093821_FirstMigration.cs",
               "RelativeDocumentMoniker": "Migrations\\20241009093821_FirstMigration.cs",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\Migrations\\20241009093821_FirstMigration.cs",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\Migrations\\20241009093821_FirstMigration.cs",
               "RelativeToolTip": "Migrations\\20241009093821_FirstMigration.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -287,11 +311,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "bootstrap-reboot.rtl.css.map",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
               "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
               "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA1JgAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -299,11 +323,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "bootstrap-reboot.min.css.map",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
               "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
               "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABOJAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -311,11 +335,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "bootstrap-reboot.css.map",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
               "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
               "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAoJgAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -323,11 +347,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "additional-methods.min.js",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
               "RelativeToolTip": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA8HQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -335,11 +359,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "additional-methods.js",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
               "RelativeToolTip": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
               "ViewState": "AQIAANgCAAAAAAAAAAAEwOgCAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -347,11 +371,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MVC.csproj",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\MVC.csproj",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\MVC.csproj",
               "RelativeDocumentMoniker": "MVC.csproj",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\MVC.csproj",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\MVC.csproj",
               "RelativeToolTip": "MVC.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -359,11 +383,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MVC",
-              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\MVC.csproj",
+              "DocumentMoniker": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\MVC.csproj",
               "RelativeDocumentMoniker": "MVC.csproj",
-              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 2\\Surf-s-up\\Project\\MVC.csproj",
+              "ToolTip": "C:\\Users\\frede\\OneDrive\\Desktop\\repositories 1\\Surf-s-up\\Project\\MVC.csproj",
               "RelativeToolTip": "MVC.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-10-10T12:29:48.134Z"
